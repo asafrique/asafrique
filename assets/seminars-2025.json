@@ -1,13 +1,13 @@
 [
   {
-    "month": "Octobre 2025",
-    "title": "Optimal control with state constraints for cancer therapy",
-    "speaker": "David Lassousnon (INSA-Rennes, France)",
-    "abstract": "Problème de contrôle optimal avec contraintes d’état appliqué à la chimiothérapie et l’optimisation de traitement.",
-    "bio": "Enseignant-chercheur à l’INSA Rennes.",
-    "slides": "",
-    "video": ""
-  },
+  "month": "Octobre 2025",
+  "title": "Optimal control problem with state constraints for cancer chemotherapy and treatment optimization",
+  "speaker": "David Lassounon (INSA Rennes, France)",
+  "abstract": "The success of chemotherapy depends on the effectiveness of the drug delivery strategy and its ability to destroy cancer cells while minimizing damage to healthy tissues. In this talk, we address an optimal control problem with state constraints in the chemotherapy of invasive tumors. Here, the drug serves as a control variable. Since drugs affect both cancer cells and healthy tissues, the main objective of the control problem is to reduce the progression of tumor cells while minimizing damage to normal tissues. We use a nonlinear reaction-diffusion equation to model the effects of drugs on tumor invasiveness.\n\nWe start with the mathematical analysis of this initial boundary value problem. Then, we formulate the constrained optimal control problem, explain the role of different types of constraints, and develop the necessary optimality conditions. Finally, we present numerical simulations of the optimal strategies for eradicating breast cancer in realistic 2D and 3D geometries, followed by future perspectives.\n\nKeywords: Cancer, Nonlinear Reaction-Diffusion Equation, Control Problem, Chemotherapy, State Constraints.",
+  "bio": "David Lassounon is a Temporary Teaching and Research Associate (ATER) at INSA Rennes and a Ph.D. candidate within IRMAR, supervised by Professors Aziz Belmiloudi and Mounir Haddou. His doctoral research focuses on developing and analyzing mathematical models of tumor invasion under chemotherapy, with an emphasis on optimal control strategies that minimize tumor resistance while reducing drug-induced damage to healthy tissue. He also works on electromagnetic field propagation problems at media–metal interfaces, exploring optimal control approaches for the generation and propagation of surface plasmons.\n\nDavid’s research interests include PDEs, SPDEs, mathematical biology, optimal control theory, state constraints, numerical analysis, and simulations. He has presented his work at international conferences such as ICOA and OPTIMA, and published in venues including SIAM Journal on Numerical Analysis and Lecture Notes in Computer Science.\n\nOriginally from Benin, David holds master’s degrees from the University of Abomey-Calavi (IMSP — Institut de Mathématiques et de Sciences Physiques) and Université Paris-Saclay, where he was a recipient of the Sophie Germain Excellence Scholarship.",
+  "slides": "",
+  "video": ""
+},
   {
     "month": "Novembre 2025",
     "title": "(À compléter)",
