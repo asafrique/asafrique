@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Séminaires — ASA</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/logoasa.jpg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logoasa.jpg" class="brand-logo" alt="Logo ASA" /><span class="brand-text">ASA</span></a>
+      <nav class="nav">
+        <a href="about.html">À propos</a>
+        <a href="seminars.html" class="active">Séminaires</a>
+        <a href="join.html" class="btn btn-cta">Rejoindre</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>ASA Seminar 2025–2026</h1>
+    <p class="muted">Programme prévisionnel (mises à jour au fil de l’année).</p>
+
+    <div class="table-wrap">
+      <table class="table" id="seminarTable" aria-describedby="legend">
+        <thead>
+          <tr>
+            <th>Mois</th>
+            <th>Nom de l’orateur</th>
+            <th>Thème du Séminaire</th>
+          </tr>
+        </thead>
+        <tbody><!-- filled by JS from assets/seminars.json --></tbody>
+      </table>
+    </div>
+
+    <div id="legend" class="muted mt-1">Les cases « À compléter » indiquent un titre à venir.</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> ASA — Association Sciences pour l’Afrique</p>
+      <nav>
+        <a href="about.html#actions">Actions</a>
+        <a href="join.html#proposer">Proposer un séminaire</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
