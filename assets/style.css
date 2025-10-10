@@ -5,7 +5,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .container{width:min(1100px,92%);margin:auto}.section{padding:56px 0}.muted{color:var(--muted)}.mt-1{margin-top:10px}
 .site-header{position:sticky;top:0;background:rgba(15,15,16,.8);backdrop-filter:blur(8px);border-bottom:1px solid #26262b;z-index:10}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
-.brand{display:flex;align-items:center;gap:10px;color:var(--text)}.brand-logo{width:44px;height:44px;border-radius:12px;border:2px solid var(--gold);object-fit:cover}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text)}.brand-logo{width:20px;height:20px;border-radius:5px;border:2px solid var(--gold);object-fit:cover}
 .nav{display:flex;gap:18px}.nav a{padding:8px 10px;border-radius:10px}.nav a.active{background:rgba(242,183,5,.15);outline:1px solid rgba(242,183,5,.35)}.nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:22px}
 .hero{padding:72px 0;background:radial-gradient(800px 400px at 80% -10%,rgba(242,183,5,.18),transparent 60%),linear-gradient(180deg,rgba(107,79,29,.18),transparent 40%)}
 .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
