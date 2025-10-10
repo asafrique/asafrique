@@ -1,78 +1,45 @@
-<body class="home">
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ASA Afrique — Association Sciences pour l’Afrique</title>
-    <link rel="stylesheet" href="assets/style.css" />
-    <link rel="icon" href="assets/logoasa.jpg" />
-  </head>
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Les sciences pour relier et inspirer.</h1>
+      <p class="lead">
+        Réconcilier les adultes, inspirer les enfants, relier les générations par les sciences.
+      </p>
+      <a class="btn-hero" href="about.html">Découvrir notre mission</a>
+      <!-- on cache l’image avec .hero-art{display:none} -->
+      <div class="hero-art"><img src="assets/logoasa.jpg" alt=""></div>
+    </div>
+  </section>
 
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html">
-          <img src="assets/logoasa.jpg" alt="Logo ASA" class="brand-logo" />
-          <span class="brand-text">ASA</span>
-        </a>
+  <!-- CARTES DYNAMIQUES -->
+  <section class="features">
+    <div class="container">
+      <h2 class="title">Notre mission</h2>
+      <p class="intro">
+        Chez ASA, nous croyons que les sciences relient la nature, la technologie et la vie quotidienne.
+      </p>
 
-        <nav class="nav">
-          <a href="index.html" class="active">Accueil</a>
-          <a href="seminars.html">Séminaires</a>
-          <a href="articles.html">Vulgarisation</a>
-          <a href="workshops.html">Ateliers</a>
-          <a href="about.html">À propos</a>
-          <a href="contact.html" class="btn">Contact</a>
-        </nav>
+      <div class="feature-row">
+        <article class="feature-card">
+          <h3><span class="dot"></span>Réconcilier</h3>
+          <p>Changer la perception des sciences et redonner confiance à chacun pour apprendre et comprendre.</p>
+        </article>
 
-        <button class="nav-toggle" aria-label="Menu">☰</button>
+        <article class="feature-card">
+          <h3><span class="dot"></span>Inspirer</h3>
+          <p>Mettre en avant des figures scientifiques diverses pour éveiller la curiosité et l’ambition.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3><span class="dot"></span>Orienter</h3>
+          <p>Accompagner élèves, parents et enseignant·es vers les STEM par des ateliers, formations et ressources.</p>
+        </article>
       </div>
-    </header>
+    </div>
+  </section>
+</main>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-inner">
-          <div>
-            <h1>Association Sciences pour l’Afrique</h1>
-            <p class="lead">
-              Solidarité • Excellence • Rayonnement — Séminaires, articles de
-              vulgarisation et ateliers pour inspirer et connecter la communauté
-              scientifique africaine.
-            </p>
-            <p>
-              <a class="btn" href="seminars.html">Voir les prochains séminaires</a>
-            </p>
-          </div>
-
-          <div class="hero-art">
-            <img src="assets/logoasa.jpg" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section class="container section">
-        <div class="grid-3">
-          <article class="card">
-            <h3>Séminaires</h3>
-            <p>Présentations de chercheur·euses avec résumé et bio dépliables.</p>
-            <p><a href="seminars.html">Programme →</a></p>
-          </article>
-
-          <article class="card">
-            <h3>Vulgarisation</h3>
-            <p>Articles courts et accessibles sur des thèmes clés.</p>
-            <p><a href="articles.html">Découvrir →</a></p>
-          </article>
-
-          <article class="card">
-            <h3>Ateliers</h3>
-            <p>Sessions pratiques en présentiel pour les jeunes et le grand public.</p>
-            <p><a href="workshops.html">Participer →</a></p>
-          </article>
-        </div>
-      </section>
-    </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
