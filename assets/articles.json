@@ -1,9 +1,10 @@
 [
   {
-    "title": "Pourquoi la modélisation mathématique sauve des vies",
-    "author": "Équipe ASA",
-    "summary": "Exemples concrets en épidémiologie, climat et ingénierie — expliqué pour lycéen·nes.",
-    "url": ""
+    "title": "Pourquoi les EDP hyperboliques importent en ingénierie",
+    "author": "ASA",
+    "date": "2025-10-01",
+    "abstract": "Petit article de vulgarisation sur les systèmes de transport et leurs applications.",
+    "link": "https://example.com/article-edp"
   },
   {
     "title": "Réseaux de neurones en 5 minutes",

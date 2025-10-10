@@ -1,10 +1,10 @@
 [
   {
-    "title": "Atelier Arduino pour débutants",
-    "place": "Cotonou",
-    "date": "Décembre 2025",
-    "description": "Découvrir l’électronique et la programmation embarquée à travers des projets simples.",
-    "inscription": "Bientôt en ligne."
+    "title": "Atelier LaTeX: Beamer pro en 90 minutes",
+    "date": "2025-11-15",
+    "speaker": "ASA",
+    "abstract": "Structurer un beamer, thèmes, TikZ, bibliographies.",
+    "link": "https://example.com/workshop-latex"
   },
   {
     "title": "Maths & Data pour l’environnement",

@@ -1,15 +1,98 @@
 [
-  { "n": 1,  "date": "Oct 2023", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 2,  "date": "Nov 2023", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 3,  "date": "Dec 2023", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 4,  "date": "Jan 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 5,  "date": "Feb 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 6,  "date": "Mar 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 7,  "date": "Apr 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 8,  "date": "May 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 9,  "date": "Jun 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 10, "date": "Jul 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 11, "date": "Aug 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 12, "date": "Sep 2024", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." }
+  {
+    "month": "Octobre 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Novembre 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Décembre 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Janvier 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Février 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Mars 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Avril 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Mai 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Juin 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Juillet 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Août 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Septembre 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  }
 ]
-

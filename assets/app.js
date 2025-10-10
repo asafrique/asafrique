@@ -1,4 +1,8 @@
-// ---------- Utils URL / année ----------
+/* ========= helpers ========= */
+function $(sel, root=document){ return root.querySelector(sel); }
+function $all(sel, root=document){ return [...root.querySelectorAll(sel)]; }
+
+/* ========= seminars ========= */
 function initYearFromURL(){
   const url = new URL(window.location);
   let year = url.searchParams.get('year');
@@ -7,21 +11,23 @@ function initYearFromURL(){
   if(!allowed.includes(String(year))) year = '2025';
   return year;
 }
-
 function updateURL(year){
   const url = new URL(window.location);
   url.searchParams.set('year', year);
   history.replaceState(null, '', url);
   location.hash = `#y${year}`;
 }
-
-// ---------- Rendu ----------
 function seminarCard(s){
   const heading = s.month ? `${s.month} — ${s.title}` : `#${s.n} — ${s.title}`;
   const meta = s.month ? `${s.speaker || ''}` : `${s.date || ''} • ${s.speaker || ''}`;
   const abs = s.abstract || '';
   const bio = s.bio ? `<p class="seminar-abs"><em>${s.bio}</em></p>` : '';
   const links = s.links ? `<p class="seminar-abs">${s.links}</p>` : '';
+  const ctas = [
+    s.video ? `<a class="btn-link" target="_blank" rel="noopener" href="${s.video}">Regarder</a>` : '',
+    s.slides ? `<a class="btn-link" target="_blank" rel="noopener" href="${s.slides}">Slides</a>` : ''
+  ].filter(Boolean).join(' ');
+  const ctaBlock = ctas ? `<p class="seminar-abs ctas">${ctas}</p>` : '';
   return `
     <div class="seminar-card">
       <h3 class="seminar-title">${heading}</h3>
@@ -29,57 +35,26 @@ function seminarCard(s){
       <p class="seminar-abs">${abs}</p>
       ${bio}
       ${links}
+      ${ctaBlock}
     </div>
   `;
 }
 
-function padToTwelve(data, year){
-  const out = [...data];
-  for(let i = data.length; i < 12; i++){
-    out.push({ n: i+1, date: `${year}-—`, speaker: 'À confirmer', title: 'TBA', abstract: 'À venir.' });
-  }
-  return out.slice(0, 12);
-}
-
-async function loadYearData(year){
-  const list = document.getElementById('seminarList');
-  list.textContent = 'Chargement…';
-  try{
-    const res = await fetch(`assets/seminars-${year}.json`, { cache: 'no-store' }); // <— chemin corrigé
-    if(!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
-    const filled = padToTwelve(Array.isArray(data) ? data : [], year);
-    list.innerHTML = `<div class="seminar-grid">${filled.map(seminarCard).join('')}</div>`;
-  }catch(err){
-    console.error(err);
-    list.innerHTML = `
-      <div class="seminar-grid">
-        ${padToTwelve([], year).map(seminarCard).join('')}
-      </div>
-      <p class="muted mt-1">Impossible de charger <code>assets/seminars-${year}.json</code>. Vérifie le chemin/fichier.</p>
-    `;
-  }
-}
-
-
 function setActiveTab(year){
-  document.querySelectorAll('.year-tab').forEach(btn=>{
-    const selected = btn.dataset.year === String(year);
-    btn.setAttribute('aria-selected', selected ? 'true' : 'false');
+  $all('.year-tab').forEach(btn=>{
+    btn?.setAttribute('aria-selected', btn.dataset.year === String(year) ? 'true' : 'false');
   });
-  const panel = document.getElementById('seminarPanel');
-  panel.setAttribute('aria-labelledby', `tab-${year}`);
+  const panel = $('#seminarPanel');
+  if(panel) panel.setAttribute('aria-labelledby', `tab-${year}`);
 }
-
 async function renderYear(year){
   setActiveTab(year);
   updateURL(year);
   await loadYearData(year);
 }
-
-// ---------- Tabs (clic + clavier) ----------
 function setupYearTabs(){
-  const tabs = [...document.querySelectorAll('.year-tab')];
+  const tabs = $all('.year-tab');
+  if(!tabs.length) return;
   tabs.forEach((btn, i)=>{
     btn.addEventListener('click', ()=> renderYear(btn.dataset.year));
     btn.addEventListener('keydown', (e)=>{
@@ -89,20 +64,66 @@ function setupYearTabs(){
         next.focus();
       }
       if(e.key === 'Enter' || e.key === ' '){
-        e.preventDefault();
-        renderYear(btn.dataset.year);
+        e.preventDefault(); renderYear(btn.dataset.year);
       }
     });
   });
 }
 
-// ---------- Init ----------
+/* ========= articles ========= */
+async function initArticles(){
+  const mount = $('#articlesList');
+  if(!mount) return;
+  mount.textContent = 'Chargement…';
+  try{
+    const res = await fetch('assets/articles.json', { cache: 'no-store' });
+    if(!res.ok) throw new Error(`HTTP ${res.status} for assets/articles.json`);
+    const items = await res.json();
+    mount.innerHTML = items.map(a=>`
+      <div class="seminar-card">
+        <h3 class="seminar-title">${a.title}</h3>
+        <p class="seminar-meta">${a.author || ''}${a.date ? ' • '+a.date : ''}</p>
+        <p class="seminar-abs">${a.abstract || ''}</p>
+        ${a.link ? `<p class="seminar-abs"><a href="${a.link}">Lire</a></p>` : ''}
+      </div>
+    `).join('');
+  }catch(err){
+    console.error('[Articles]', err);
+    mount.innerHTML = `<p class="muted">Impossible de charger <code>assets/articles.json</code>.</p>`;
+  }
+}
+
+/* ========= workshops ========= */
+async function initWorkshops(){
+  const mount = $('#workshopsList');
+  if(!mount) return;
+  mount.textContent = 'Chargement…';
+  try{
+    const res = await fetch('assets/workshops.json', { cache: 'no-store' });
+    if(!res.ok) throw new Error(`HTTP ${res.status} for assets/workshops.json`);
+    const items = await res.json();
+    mount.innerHTML = items.map(w=>`
+      <div class="seminar-card">
+        <h3 class="seminar-title">${w.title}</h3>
+        <p class="seminar-meta">${w.date || ''}${w.speaker ? ' • '+w.speaker : ''}</p>
+        <p class="seminar-abs">${w.abstract || ''}</p>
+        ${w.link ? `<p class="seminar-abs"><a href="${w.link}">Détails</a></p>` : ''}
+      </div>
+    `).join('');
+  }catch(err){
+    console.error('[Workshops]', err);
+    mount.innerHTML = `<p class="muted">Impossible de charger <code>assets/workshops.json</code>.</p>`;
+  }
+}
+
+/* ========= init ========= */
 document.addEventListener('DOMContentLoaded', async ()=>{
   setupYearTabs();
-  const year = initYearFromURL();
-  await renderYear(year);
-
-  // année dynamique footer (si présent)
-  const ySpan = document.getElementById('year');
-  if(ySpan) ySpan.textContent = new Date().getFullYear();
+  if($('#seminarList')){
+    const year = initYearFromURL();
+    await renderYear(year);
+  }
+  initArticles();
+  initWorkshops();
+  const ySpan = $('#year'); if(ySpan) ySpan.textContent = new Date().getFullYear();
 });

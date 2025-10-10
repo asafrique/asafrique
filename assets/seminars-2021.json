@@ -1,15 +1,98 @@
 [
-  { "n": 1,  "date": "Oct 2021", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 2,  "date": "Nov 2021", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 3,  "date": "Dec 2021", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 4,  "date": "Jan 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 5,  "date": "Feb 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 6,  "date": "Mar 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 7,  "date": "Apr 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 8,  "date": "May 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 9,  "date": "Jun 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 10, "date": "Jul 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 11, "date": "Aug 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." },
-  { "n": 12, "date": "Sep 2022", "speaker": "À confirmer", "title": "TBA", "abstract": "À venir." }
+  {
+    "month": "Octobre 2021",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Novembre 2021",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Décembre 2021",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Janvier 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Février 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Mars 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Avril 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Mai 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Juin 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Juillet 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Août 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  },
+  {
+    "month": "Septembre 2022",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "links": ""
+  }
 ]
-

@@ -5,9 +5,7 @@
     "speaker": "David Lassousnon (INSA-Rennes, France)",
     "abstract": "Problème de contrôle optimal avec contraintes d’état appliqué à la chimiothérapie et l’optimisation de traitement (aperçu méthodologique + résultats).",
     "bio": "David Lassousnon est enseignant-chercheur à l’INSA Rennes.",
-    "links": "—",
-    "slides": "https://example.com/slides-2025-10.pdf",
-    "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    "links": "—"
   },
   {
     "month": "Novembre 2025",
@@ -23,8 +21,7 @@
     "speaker": "Mohammed Safwen Markou (Tunis, Tunisie)",
     "abstract": "Approches RL multi‑agents pour l’optimisation coordonnée des feux de signalisation.",
     "bio": "Safwen Markou est chercheur basé à Tunis.",
-    "links": "—",
-    "video": "https://vimeo.com/123456789"
+    "links": "—"
   },
   {
     "month": "Janvier 2026",
@@ -78,22 +75,6 @@
     "month": "Juillet 2026",
     "title": "(À compléter)",
     "speaker": "Nana Téwendé Emmanuel (Nazi Boni, Burkina‑Faso)",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Août 2026",
-    "title": "(À compléter)",
-    "speaker": "—",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Septembre 2026",
-    "title": "(À compléter)",
-    "speaker": "—",
     "abstract": "Résumé à venir.",
     "bio": "",
     "links": ""

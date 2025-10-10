@@ -1,101 +1,14 @@
 /* theme etc */ 
-:root{
-  --bg:#0f0f10;--card:#18181b;--muted:#a1a1aa;--text:#e7e7ea;
-  --gold:#f2b705;--brown:#6b4f1d;--accent:#f2b705;--radius:18px;
-  --nav-blue:#3b82f6;          /* ← AJOUT : bleu du menu/contours */
-}
+:root{--bg:#0f0f10;--card:#18181b;--muted:#a1a1aa;--text:#e7e7ea;--gold:#f2b705;--brown:#6b4f1d;--accent:#f2b705;--radius:18px}
 html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .container{width:min(1100px,92%);margin:auto}.section{padding:56px 0}.muted{color:var(--muted)}.mt-1{margin-top:10px}
 .site-header{position:sticky;top:0;background:rgba(15,15,16,.8);backdrop-filter:blur(8px);border-bottom:1px solid #26262b;z-index:10}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:var(--text);
-}
-
-.brand-logo{
-  width:38px;
-  height:28px;
-  border-radius:4px;
-  border:1px solid var(--nav-blue);  /* ← ÉTAIT var(--gold) */
-  background: rgba(59,130,246,.12);  /* optionnel : léger fond bleu */
-  object-fit:cover;
-}
-.nav a{
-  padding:10px 15px;
-  border-radius:10px;
-  color:#3b82f6; /* bleu */
-}
-.nav a.active{
-  background:rgba(59,130,246,.15); /* bleu clair de fond */
-  outline:1px solid rgba(59,130,246,.35);
-}
-
-.nav-toggle:focus-visible{ outline:2px solid var(--nav-blue) }
-.hero-inner{ display:grid; grid-template-columns: 1.1fr .1fr; gap:5px; align-items:center; }
-/* Taille de l'image dans le hero (accueil) */
-.hero-art img{
-  width: min(320px, 70%);  /* ↓ réduis ici (ex. 320→300→260px) */
-  max-height: 280px;       /* borne en hauteur */
-  height: auto;
-  object-fit: contain;
-}
-/* Par défaut (desktop) : on cache le bouton */
-.nav-toggle{
-  display:none;
-}
-
-/* Style du bouton (mobile) */
-@media (max-width:900px){
-  .nav-toggle{
-    --size:52px;                 /* grosse cible tactile (≥44px) */
-    width:var(--size);
-    height:var(--size);
-    display:grid;
-    place-items:center;
-    border-radius:12px;
-    border:1px solid rgba(59,130,246,.5);   /* contour bleu visible */
-    background:rgba(59,130,246,.12);        /* léger fond bleu */
-    color:var(--text);
-    cursor:pointer;
-    position:relative;            /* pour l’ombre/focus */
-    z-index:20;                   /* au-dessus du menu déroulant */
-  }
-  .nav-toggle:hover{
-    background:rgba(59,130,246,.18);
-  }
-  .nav-toggle:active{
-    transform:scale(0.98);
-  }
-  .nav-toggle:focus-visible{
-    outline:2px solid var(--nav-blue);
-    outline-offset:3px;
-  }
-
-  /* Les 3 barres */
-  .nav-toggle .bar{
-    display:block;
-    width:28px;      /* longueur des barres */
-    height:3.5px;    /* épaisseur pour la visibilité */
-    background:var(--text);
-    border-radius:3px;
-    margin:5px 0;
-  }
-
-  /* Menu déroulant déjà présent chez toi, je remets pour contexte */
-  .nav{ display:none }
-  .nav.open{
-    display:flex; flex-direction:column;
-    position:absolute; right:4%; top:64px;
-    background:#141416; padding:12px;
-    border-radius:12px; border:1px solid #26262b;
-    gap:6px;
-  }
-}
-
+.brand{display:flex;align-items:center;gap:10px;color:var(--text)}.brand-logo{width:44px;height:44px;border-radius:12px;border:2px solid var(--gold);object-fit:cover}
+.nav{display:flex;gap:18px}.nav a{padding:8px 10px;border-radius:10px}.nav a.active{background:rgba(242,183,5,.15);outline:1px solid rgba(242,183,5,.35)}.nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:22px}
+.hero{padding:72px 0;background:radial-gradient(800px 400px at 80% -10%,rgba(242,183,5,.18),transparent 60%),linear-gradient(180deg,rgba(107,79,29,.18),transparent 40%)}
+.hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
 .hero h1{font-size:clamp(1.8rem,2.6rem,3rem);margin:0 0 10px}.lead{color:#d7d7da}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--card);border:1px solid #26262b;border-radius:var(--radius);padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
@@ -109,34 +22,26 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .social{display:flex;gap:10px;flex-wrap:wrap}.icon{width:28px;height:28px;display:inline-block;border-radius:8px;overflow:hidden;border:1px solid #2a2a30;background:#111}.icon img{width:100%;height:100%;display:block}
 .site-footer{border-top:1px solid #26262b;padding:18px 0;margin-top:32px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
 @media (max-width:900px){.hero-inner{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.nav{display:none}.nav.open{display:flex;flex-direction:column;position:absolute;right:4%;top:64px;background:#141416;padding:10px;border-radius:12px;border:1px solid #26262b}.nav-toggle{display:block}}
-:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:10px} 
-/* ===== Onglets Années (Séminaires) ===== */
-.year-tabs{
-  display:flex; gap:8px; flex-wrap:wrap; margin:16px 0 18px;
-}
-.year-tab{
-  padding:8px 12px; border-radius:10px; border:1px solid rgba(59,130,246,.35);
-  background:rgba(59,130,246,.10); color:var(--text);
-  cursor:pointer; font-weight:600;
-}
-.year-tab[aria-selected="true"]{
-  background:rgba(59,130,246,.18);
-  outline:1px solid rgba(59,130,246,.45);
-}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:10px}
+/* ===== Tabs & cards for seminars/articles/workshops ===== */
+.year-tabs{ display:flex; gap:8px; flex-wrap:wrap; margin:16px 0 18px; }
+.year-tab{ padding:8px 12px; border-radius:10px; border:1px solid rgba(59,130,246,.35);
+  background:rgba(59,130,246,.10); color:var(--text); cursor:pointer; font-weight:600; }
+.year-tab[aria-selected="true"]{ background:rgba(59,130,246,.18); outline:1px solid rgba(59,130,246,.45); }
 .year-tab:focus-visible{ outline:2px solid var(--nav-blue); outline-offset:2px }
-
 .seminar-panel{ margin-top:8px }
 .seminar-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
 @media (max-width:900px){ .seminar-grid{ grid-template-columns:1fr } }
-
-.seminar-card{
-  background:var(--card); border:1px solid #26262b; border-radius:14px; padding:14px;
-}
+.seminar-card{ background:var(--card); border:1px solid #26262b; border-radius:14px; padding:14px; }
 .seminar-title{ margin:0 0 6px; font-size:1.05rem; }
 .seminar-meta{ color:var(--muted); font-size:.9rem; margin:0 0 6px; }
 .seminar-abs{ margin:0 }
 
-
-
-
-
+/* CTA buttons for videos/slides */
+.btn-link{
+  display:inline-block; padding:6px 10px; border-radius:10px;
+  border:1px solid rgba(59,130,246,.45); background:rgba(59,130,246,.12);
+  color:var(--text); text-decoration:none; font-weight:600; font-size:.92rem;
+}
+.btn-link:hover{ background:rgba(59,130,246,.18); text-decoration:none }
+.seminar-card .ctas{ margin-top:8px }
