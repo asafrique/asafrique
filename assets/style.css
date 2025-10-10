@@ -10,15 +10,27 @@
   --nav-blue:#60a5fa;      /* bleu ciel du menu et des accents */
 }
 
+/* ===== Thème sombre + variables ===== */
+:root{
+  --bg:#000;              /* fond noir */
+  --card:#18181b;
+  --muted:#a1a1aa;
+  --text:#e7e7ea;
+  --gold:#f2b705;
+  --accent:#f2b705;
+  --radius:18px;
+  --nav-blue:#60a5fa;     /* bleu ciel */
+}
+
 html,body{
   margin:0; background:var(--bg); color:var(--text);
   font:16px/1.6 system-ui, Segoe UI, Roboto, Arial;
 }
-a{ color:var(--nav-blue); text-decoration:none }
-a:hover{ text-decoration:underline }
-.container{ width:min(1100px,92%); margin:auto }
-.section{ padding:56px 0 }
-.muted{ color:var(--muted) }
+a{color:var(--nav-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(1100px,92%);margin:auto}
+.section{padding:56px 0}
+.muted{color:var(--muted)}
 
 /* ===== Header ===== */
 .site-header{
@@ -26,65 +38,74 @@ a:hover{ text-decoration:underline }
   background:rgba(0,0,0,.8); backdrop-filter:blur(8px);
   border-bottom:1px solid #26262b;
 }
-.header-inner{ display:flex; align-items:center; justify-content:space-between; gap:18px; padding:12px 0 }
-.brand{ display:flex; align-items:center; gap:10px; color:var(--text) }
-.brand-logo{ width:14px; height:14px; border-radius:4px; border:1px solid var(--nav-blue); object-fit:cover }
-.nav{ display:flex; gap:18px }
-.nav a{ padding:6px 8px; border-radius:10px; color:var(--nav-blue) }
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text)}
+.brand-logo{width:14px;height:14px;border-radius:4px;border:1px solid var(--nav-blue);object-fit:cover}
+
+.nav{display:flex;gap:18px}
+.nav a{padding:6px 8px;border-radius:10px;color:var(--nav-blue)}
 .nav a.active{
-  background: color-mix(in srgb, var(--nav-blue) 15%, transparent);
-  outline: 1px solid color-mix(in srgb, var(--nav-blue) 35%, transparent);
+  background:color-mix(in srgb,var(--nav-blue) 15%,transparent);
+  outline:1px solid color-mix(in srgb,var(--nav-blue) 35%,transparent);
 }
-.nav-toggle{ display:none; background:none; border:0; color:var(--text); font-size:22px }
+.nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:22px}
 @media (max-width:900px){
-  .nav{ display:none }
+  .nav{display:none}
   .nav.open{
-    display:flex; flex-direction:column; position:absolute; right:4%; top:64px;
-    background:#141416; padding:12px; border-radius:12px; border:1px solid #26262b; gap:6px; z-index:20;
+    display:flex;flex-direction:column;position:absolute;right:4%;top:64px;
+    background:#141416;padding:12px;border-radius:12px;border:1px solid #26262b;gap:6px;z-index:20;
   }
-  .nav-toggle{ display:block; margin-left:auto }
+  .nav-toggle{display:block;margin-left:auto}
 }
-:focus-visible{ outline:2px solid var(--nav-blue); outline-offset:2px; border-radius:10px }
+:focus-visible{outline:2px solid var(--nav-blue);outline-offset:2px;border-radius:10px}
 
-/* ===== Hero (accueil) ===== */
-.hero{
-  padding:72px 0 40px;
-  background: #000;                 /* noir uni */
-}
-.hero-inner{
-  display:grid; grid-template-columns:1fr; gap:16px; align-items:center;
-  text-align:center;
-}
-/* titre & sous-titre */
-.hero h1{ font-size:clamp(2rem,3vw,3rem); margin:0 0 8px }
-.lead{ color:#d7d7da; margin:0 auto; max-width:780px }
+/* ===== HERO (fond noir, image masquée) ===== */
+.hero{padding:72px 0 40px;background:#000}
+.hero-inner{display:grid;grid-template-columns:1fr;gap:16px;text-align:center;align-items:center}
+.hero h1{font-size:clamp(2rem,3vw,3rem);margin:0 0 8px}
+.lead{color:#d7d7da;max-width:780px;margin:0 auto}
+.hero-art{display:none}  /* cache l'image */
 
-/* masquer l'image du hero */
-.hero-art{ display:none }
-
-/* bouton de mise en avant */
 .btn-hero{
-  display:inline-block; margin-top:14px;
-  padding:10px 16px; font-weight:700;
-  color:#0b1220; background:linear-gradient(180deg,#fde68a,#fbbf24);
-  border-radius:999px; border:0;
-  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  display:inline-block;margin-top:14px;padding:10px 16px;font-weight:700;
+  color:#0b1220;background:linear-gradient(180deg,#fde68a,#fbbf24);
+  border-radius:999px;border:0;box-shadow:0 8px 20px rgba(0,0,0,.35)
 }
-.btn-hero:hover{ filter:brightness(1.05); text-decoration:none }
+.btn-hero:hover{filter:brightness(1.05);text-decoration:none}
 
-/* ===== Cartes dynamiques “Notre mission” ===== */
-.features{
-  padding:40px 0 8px;
-  background: linear-gradient(180deg, rgba(96,165,250,.08), transparent);
-}
-.features .title{
-  text-align:center; font-size:clamp(1.6rem,2.3vw,2rem); margin:0 0 8px; color:var(--nav-blue);
-}
-.features .intro{ text-align:center; color:var(--muted); max-width:900px; margin:0 auto 22px }
+/* ===== Cartes dynamiques d'accueil ===== */
+.features{padding:40px 0 8px;background:linear-gradient(180deg,rgba(96,165,250,.08),transparent)}
+.features .title{color:var(--nav-blue);text-align:center;font-size:clamp(1.6rem,2.3vw,2rem);margin:0 0 8px}
+.features .intro{text-align:center;color:var(--muted);max-width:900px;margin:0 auto 22px}
 
-.feature-row{
-  display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+.feature-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.feature-row{grid-template-columns:1fr}}
+
+.feature-card{
+  background:linear-gradient(180deg,#0c0c0d,#121214);
+  border:1px solid #22242a;border-radius:16px;padding:18px;
+  box-shadow:0 8px 24px rgba(0,0,0,.35);
+  transition:transform .18s, box-shadow .18s, border-color .18s;
 }
+.feature-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 34px rgba(0,0,0,.45);
+  border-color:color-mix(in srgb,var(--nav-blue) 30%, #22242a);
+}
+.feature-card h3{
+  display:flex;align-items:center;gap:10px;margin:0 0 8px;
+  font-size:1.1rem;color:#dfe8ff;
+}
+.feature-card .dot{
+  width:10px;height:10px;border-radius:50%;
+  background:var(--nav-blue);box-shadow:0 0 0 4px color-mix(in srgb,var(--nav-blue) 25%,transparent);
+}
+.feature-card p{margin:0;color:#d0d3da}
+
+/* ===== Footer ===== */
+.site-footer{border-top:1px solid #26262b;padding:18px 0;margin-top:32px}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+
 @media (max-width:900px){ .feature-row{ grid-template-columns:1fr } }
 
 .feature-card{
