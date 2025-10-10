@@ -25,7 +25,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
   object-fit:cover;
 }
 .nav a{
-  padding:8px 9px;
+  padding:10px 15px;
   border-radius:10px;
   color:#3b82f6; /* bleu */
 }
@@ -33,17 +33,7 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
   background:rgba(59,130,246,.15); /* bleu clair de fond */
   outline:1px solid rgba(59,130,246,.35);
 }
-.nav-toggle{
-  --size:38px;                 /* cible tactile confortable */
-  width:var(--size);
-  height:var(--size);
-  display:none;                /* affiché en mobile via @media */
-  place-items:center;
-  border-radius:12px;
-  border:1px solid #2a2a30;
-  background:#141416;
-  cursor:pointer;
-  }
+
 .nav-toggle:focus-visible{ outline:2px solid var(--nav-blue) }
 .hero-inner{ display:grid; grid-template-columns: 1.1fr .1fr; gap:5px; align-items:center; }
 /* Taille de l'image dans le hero (accueil) */
@@ -52,11 +42,6 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
   max-height: 280px;       /* borne en hauteur */
   height: auto;
   object-fit: contain;
-}
-@media (max-width:900px){
-  .nav{ display:none }
-  .nav.open{ display:flex; flex-direction:column; position:absolute; right:4%; top:64px; background:#141416; padding:10px; border-radius:12px; border:1px solid #26262b }
-  .nav-toggle{ display:grid }  /* <<< important */
 }
 .hero h1{font-size:clamp(1.8rem,2.6rem,3rem);margin:0 0 10px}.lead{color:#d7d7da}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
