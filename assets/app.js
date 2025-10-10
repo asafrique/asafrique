@@ -17,11 +17,18 @@ function updateURL(year){
 
 // ---------- Rendu ----------
 function seminarCard(s){
+  const heading = s.month ? `${s.month} — ${s.title}` : `#${s.n} — ${s.title}`;
+  const meta = s.month ? `${s.speaker || ''}` : `${s.date || ''} • ${s.speaker || ''}`;
+  const abs = s.abstract || '';
+  const bio = s.bio ? `<p class="seminar-abs"><em>${s.bio}</em></p>` : '';
+  const links = s.links ? `<p class="seminar-abs">${s.links}</p>` : '';
   return `
     <div class="seminar-card">
-      <h3 class="seminar-title">#${s.n} — ${s.title}</h3>
-      <p class="seminar-meta">${s.date} • ${s.speaker}</p>
-      <p class="seminar-abs">${s.abstract}</p>
+      <h3 class="seminar-title">${heading}</h3>
+      <p class="seminar-meta">${meta}</p>
+      <p class="seminar-abs">${abs}</p>
+      ${bio}
+      ${links}
     </div>
   `;
 }
