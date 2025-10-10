@@ -41,3 +41,67 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .btn-link{display:inline-block;padding:6px 10px;border-radius:10px;border:1px solid rgba(59,130,246,.45);background:rgba(59,130,246,.12);color:var(--text);text-decoration:none;font-weight:600;font-size:.92rem}
 .btn-link:hover{background:rgba(59,130,246,.18);text-decoration:none}
 .seminar-card .ctas{margin-top:8px}
+
+/* ===== Accueil : titres en bleu ===== */
+.home h1,
+.home h2,
+.home h3 { color: var(--nav-blue); }  /* utilise le bleu de ton thème */
+
+/* ===== Hero : grille et image logo réduite ===== */
+.hero-inner{
+  display:grid;
+  grid-template-columns: 1.1fr 0.9fr;  /* texte / image équilibrés */
+  gap: 24px;
+  align-items:center;
+}
+.hero-art{ display:flex; justify-content:center; }
+
+.hero-logo{
+  width: clamp(220px, 30vw, 420px); /* réduit fortement sur grands écrans */
+  max-height: 380px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Sur mobile : image encore plus raisonnable */
+@media (max-width: 900px){
+  .hero-inner{ grid-template-columns: 1fr; }
+  .hero-logo{ width: clamp(180px, 60vw, 320px); max-height: 300px; margin-inline:auto; }
+}
+
+/* ===== Bouton hamburguer (3 barres) ===== */
+.nav-toggle{
+  --size:52px;                 /* grande cible tactile */
+  width:var(--size);
+  height:var(--size);
+  display:none;                /* caché par défaut (desktop) */
+  place-items:center;
+  border-radius:12px;
+  border:1px solid rgba(59,130,246,.5);
+  background:rgba(59,130,246,.12);
+  cursor:pointer;
+}
+.nav-toggle .bar{
+  display:block;
+  width:28px;
+  height:3.5px;
+  background:var(--text);
+  border-radius:3px;
+  margin:5px 0;
+}
+.nav-toggle:hover{ background:rgba(59,130,246,.18); }
+.nav-toggle:focus-visible{ outline:2px solid var(--nav-blue); outline-offset:3px }
+
+/* Menu mobile : caché par défaut, visible quand .open */
+@media (max-width: 900px){
+  .nav{ display:none; }
+  .nav.open{
+    display:flex; flex-direction:column;
+    position:absolute; right:4%; top:64px;
+    background:#141416; padding:12px;
+    border-radius:12px; border:1px solid #26262b; gap:6px;
+    z-index: 20;
+  }
+  .nav-toggle{ display:grid; margin-left:auto; } /* bouton en haut-droite */
+}
+
