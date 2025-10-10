@@ -17,7 +17,15 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .acc summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
 .acc summary::marker,.acc summary::-webkit-details-marker{display:none}
 .acc .acc-body{padding:0 16px 14px 16px;border-top:1px dashed #303036}
-.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:rgba(242,183,5,.15);border:1px solid rgba(242,183,5,.35);color:#fbeaa6;font-size:.85rem}
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--nav-blue) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--nav-blue) 35%, transparent);
+  color: var(--nav-blue);
+  font-size: .85rem;
+}
 .list-clean{padding:0;margin:0;list-style:none;display:grid;gap:10px}
 .social{display:flex;gap:10px;flex-wrap:wrap}.icon{width:28px;height:28px;display:inline-block;border-radius:8px;overflow:hidden;border:1px solid #2a2a30;background:#111}.icon img{width:100%;height:100%;display:block}
 .site-footer{border-top:1px solid #26262b;padding:18px 0;margin-top:32px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -57,16 +65,16 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .hero-art{ display:flex; justify-content:center; }
 
 .hero-logo{
-  width: clamp(220px, 30vw, 420px); /* réduit fortement sur grands écrans */
-  max-height: 380px;
+  width: clamp(22px, 3vw, 42px); /* réduit fortement sur grands écrans */
+  max-height: 38px;
   height: auto;
   object-fit: contain;
 }
 
 /* Sur mobile : image encore plus raisonnable */
-@media (max-width: 900px){
+@media (max-width: 90px){
   .hero-inner{ grid-template-columns: 1fr; }
-  .hero-logo{ width: clamp(180px, 60vw, 320px); max-height: 300px; margin-inline:auto; }
+  .hero-logo{ width: clamp(8px, 6vw, 7px); max-height: 3px; margin-inline:auto; }
 }
 
 /* ===== Bouton hamburguer (3 barres) ===== */
