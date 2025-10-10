@@ -5,7 +5,20 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .container{width:min(1100px,92%);margin:auto}.section{padding:56px 0}.muted{color:var(--muted)}.mt-1{margin-top:10px}
 .site-header{position:sticky;top:0;background:rgba(15,15,16,.8);backdrop-filter:blur(8px);border-bottom:1px solid #26262b;z-index:10}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
-.brand{display:flex;align-items:center;gap:10px;color:var(--text)}.brand-logo{width:20px;height:20px;border-radius:5px;border:2px solid var(--gold);object-fit:cover}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--text);
+}
+
+.brand-logo{
+  width:14px;   /* taille plus petite */
+  height:14px;  /* même valeur pour garder les proportions */
+  border-radius:4px; /* réduit aussi le rayon pour rester harmonieux */
+  border:1px solid var(--gold); /* bordure plus fine */
+  object-fit:cover;
+}
 .nav a{
   padding:6px 8px;
   border-radius:10px;
