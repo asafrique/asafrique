@@ -43,6 +43,59 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
   height: auto;
   object-fit: contain;
 }
+/* Par défaut (desktop) : on cache le bouton */
+.nav-toggle{
+  display:none;
+}
+
+/* Style du bouton (mobile) */
+@media (max-width:900px){
+  .nav-toggle{
+    --size:52px;                 /* grosse cible tactile (≥44px) */
+    width:var(--size);
+    height:var(--size);
+    display:grid;
+    place-items:center;
+    border-radius:12px;
+    border:1px solid rgba(59,130,246,.5);   /* contour bleu visible */
+    background:rgba(59,130,246,.12);        /* léger fond bleu */
+    color:var(--text);
+    cursor:pointer;
+    position:relative;            /* pour l’ombre/focus */
+    z-index:20;                   /* au-dessus du menu déroulant */
+  }
+  .nav-toggle:hover{
+    background:rgba(59,130,246,.18);
+  }
+  .nav-toggle:active{
+    transform:scale(0.98);
+  }
+  .nav-toggle:focus-visible{
+    outline:2px solid var(--nav-blue);
+    outline-offset:3px;
+  }
+
+  /* Les 3 barres */
+  .nav-toggle .bar{
+    display:block;
+    width:28px;      /* longueur des barres */
+    height:3.5px;    /* épaisseur pour la visibilité */
+    background:var(--text);
+    border-radius:3px;
+    margin:5px 0;
+  }
+
+  /* Menu déroulant déjà présent chez toi, je remets pour contexte */
+  .nav{ display:none }
+  .nav.open{
+    display:flex; flex-direction:column;
+    position:absolute; right:4%; top:64px;
+    background:#141416; padding:12px;
+    border-radius:12px; border:1px solid #26262b;
+    gap:6px;
+  }
+}
+
 .hero h1{font-size:clamp(1.8rem,2.6rem,3rem);margin:0 0 10px}.lead{color:#d7d7da}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--card);border:1px solid #26262b;border-radius:var(--radius);padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
