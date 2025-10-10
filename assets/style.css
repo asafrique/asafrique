@@ -1,5 +1,9 @@
 /* theme etc */ 
-:root{--bg:#0f0f10;--card:#18181b;--muted:#a1a1aa;--text:#e7e7ea;--gold:#f2b705;--brown:#6b4f1d;--accent:#f2b705;--radius:18px}
+:root{
+  --bg:#0f0f10;--card:#18181b;--muted:#a1a1aa;--text:#e7e7ea;
+  --gold:#f2b705;--brown:#6b4f1d;--accent:#f2b705;--radius:18px;
+  --nav-blue:#3b82f6;          /* ← AJOUT : bleu du menu/contours */
+}
 html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .container{width:min(1100px,92%);margin:auto}.section{padding:56px 0}.muted{color:var(--muted)}.mt-1{margin-top:10px}
@@ -8,7 +12,22 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .brand{display:flex;align-items:center;gap:10px;color:var(--text)}.brand-logo{width:44px;height:44px;border-radius:12px;border:2px solid var(--gold);object-fit:cover}
 .nav{display:flex;gap:18px}.nav a{padding:8px 10px;border-radius:10px}.nav a.active{background:rgba(242,183,5,.15);outline:1px solid rgba(242,183,5,.35)}.nav-toggle{display:none;background:none;border:0;color:var(--text);font-size:22px}
 .hero{padding:72px 0;background:radial-gradient(800px 400px at 80% -10%,rgba(242,183,5,.18),transparent 60%),linear-gradient(180deg,rgba(107,79,29,.18),transparent 40%)}
-.hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.hero-inner{ display:grid; grid-template-columns: 1.4fr .6fr; gap:20px; align-items:center; }
+/* Réduit aussi la grille du hero */
+.hero-inner{
+  grid-template-columns: 1.1fr 0.9fr;  /* un peu moins de place pour l’image */
+  gap: 20px;
+}
+
+.brand-logo{
+  width:14px;
+  height:14px;
+  border-radius:4px;
+  border:1px solid var(--nav-blue);  /* ← ÉTAIT var(--gold) */
+  background: rgba(59,130,246,.12);  /* optionnel : léger fond bleu */
+  object-fit:cover;
+}
+
 .hero h1{font-size:clamp(1.8rem,2.6rem,3rem);margin:0 0 10px}.lead{color:#d7d7da}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .card{background:var(--card);border:1px solid #26262b;border-radius:var(--radius);padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
