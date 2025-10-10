@@ -38,7 +38,7 @@ async function loadYearData(year){
   const list = document.getElementById('seminarList');
   list.textContent = 'Chargement…';
   try{
-    const res = await fetch(`data/seminars-${year}.json`, { cache: 'no-store' });
+    const res = await fetch(`assets/seminars-${year}.json`, { cache: 'no-store' }); // <— chemin corrigé
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     const filled = padToTwelve(Array.isArray(data) ? data : [], year);
@@ -49,10 +49,11 @@ async function loadYearData(year){
       <div class="seminar-grid">
         ${padToTwelve([], year).map(seminarCard).join('')}
       </div>
-      <p class="muted mt-1">Impossible de charger <code>data/seminars-${year}.json</code>. Vérifie le chemin/fichier.</p>
+      <p class="muted mt-1">Impossible de charger <code>assets/seminars-${year}.json</code>. Vérifie le chemin/fichier.</p>
     `;
   }
 }
+
 
 function setActiveTab(year){
   document.querySelectorAll('.year-tab').forEach(btn=>{
