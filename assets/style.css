@@ -1,5 +1,9 @@
 /* theme etc */ 
-:root{--bg:#0f0f10;--card:#18181b;--muted:#a1a1aa;--text:#e7e7ea;--gold:#f2b705;--brown:#6b4f1d;--accent:#f2b705;--radius:18px}
+:root{
+  --bg:#0f0f10;--card:#18181b;--muted:#a1a1aa;--text:#e7e7ea;
+  --gold:#f2b705;--brown:#6b4f1d;--accent:#f2b705;--radius:18px;
+  --nav-blue:#3b82f6;          /* ← AJOUT : bleu du menu/contours */
+}
 html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .container{width:min(1100px,92%);margin:auto}.section{padding:56px 0}.muted{color:var(--muted)}.mt-1{margin-top:10px}
@@ -13,10 +17,11 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 }
 
 .brand-logo{
-  width:14px;   /* taille plus petite */
-  height:14px;  /* même valeur pour garder les proportions */
-  border-radius:4px; /* réduit aussi le rayon pour rester harmonieux */
-  border:1px solid var(--gold); /* bordure plus fine */
+  width:14px;
+  height:14px;
+  border-radius:4px;
+  border:1px solid var(--nav-blue);  /* ← ÉTAIT var(--gold) */
+  background: rgba(59,130,246,.12);  /* optionnel : léger fond bleu */
   object-fit:cover;
 }
 .nav a{
