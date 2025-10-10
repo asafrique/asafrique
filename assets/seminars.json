@@ -1,82 +1,19 @@
-[
-  {
-    "month": "Octobre 2025",
-    "title": "Optimal control with state constraints for cancer therapy",
-    "speaker": "David Lassousnon (INSA-Rennes, France)",
-    "abstract": "Problème de contrôle optimal avec contraintes d’état appliqué à la chimiothérapie et l’optimisation de traitement (aperçu méthodologique + résultats).",
-    "bio": "David Lassousnon est enseignant-chercheur à l’INSA Rennes.",
-    "links": "—"
-  },
-  {
-    "month": "Novembre 2025",
-    "title": "(À compléter)",
-    "speaker": "Mohammad Akil (Univ Polytec Hauts de France, Valenciennes, France)",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Décembre 2025",
-    "title": "Multiagent Reinforcement Learning for Traffic Signal Control",
-    "speaker": "Mohammed Safwen Markou (Tunis, Tunisie)",
-    "abstract": "Approches RL multi‑agents pour l’optimisation coordonnée des feux de signalisation.",
-    "bio": "Safwen Markou est chercheur basé à Tunis.",
-    "links": "—"
-  },
-  {
-    "month": "Janvier 2026",
-    "title": "(À compléter)",
-    "speaker": "—",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Février 2026",
-    "title": "(À compléter)",
-    "speaker": "Boubacar Diallo (PAUSTI, Bamako, Mali)",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Mars 2026",
-    "title": "(À compléter)",
-    "speaker": "Cyprien Tamekue (Washington Univ in St. Louis, USA)",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Avril 2026",
-    "title": "(À compléter)",
-    "speaker": "Clotilde Djuikem (Univ Manitoba, Canada)",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Mai 2026",
-    "title": "(À compléter)",
-    "speaker": "Nyamador Komla David ADENYO (CHU de Québec‑Université Laval)",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Juin 2026",
-    "title": "(À compléter)",
-    "speaker": "—",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  },
-  {
-    "month": "Juillet 2026",
-    "title": "(À compléter)",
-    "speaker": "Nana Téwendé Emmanuel (Nazi Boni, Burkina‑Faso)",
-    "abstract": "Résumé à venir.",
-    "bio": "",
-    "links": ""
-  }
-]
+<main class="container section">
+  <h1>ASA Seminar</h1>
+  <p class="muted">Clique sur une année pour afficher ses 12 séminaires.</p>
+
+  <!-- Onglets Années -->
+  <nav class="year-tabs" role="tablist" aria-label="Séminaires par année">
+    <button class="year-tab" role="tab" aria-selected="true" data-year="2025" id="tab-2025" aria-controls="panel-2025">2025</button>
+    <button class="year-tab" role="tab" aria-selected="false" data-year="2024" id="tab-2024" aria-controls="panel-2024">2024</button>
+    <button class="year-tab" role="tab" aria-selected="false" data-year="2023" id="tab-2023" aria-controls="panel-2023">2023</button>
+    <button class="year-tab" role="tab" aria-selected="false" data-year="2022" id="tab-2022" aria-controls="panel-2022">2022</button>
+    <button class="year-tab" role="tab" aria-selected="false" data-year="2021" id="tab-2021" aria-controls="panel-2021">2021</button>
+  </nav>
+
+  <!-- Panneau -->
+  <div id="seminarPanel" class="seminar-panel" role="tabpanel" aria-labelledby="tab-2025">
+    <div id="seminarList">Chargement…</div>
+  </div>
+</main>
+<script src="assets/app.js" defer></script>
