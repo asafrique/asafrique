@@ -1,1 +1,100 @@
-(function(){const t=document.querySelector(".nav-toggle"),e=document.querySelector(".nav");t&&e&&t.addEventListener("click",()=>e.classList.toggle("open"));const n=document.getElementById("year");n&&(n.textContent=(new Date).getFullYear())})();async function loadJSON(t){const e=await fetch(t);if(!e.ok)throw new Error(t);return e.json()}function el(t,e={},...n){const a=document.createElement(t);return Object.entries(e).forEach(([t,e])=>{"class"===t?a.className=e:a.setAttribute(t,e)}),n.forEach((t=>a.append(t))),a}function renderAccordion(t,e,n){const a=el("div",{class:"accordion"});e.forEach((t=>{const e=n.filter((e=>e.inSummary)).map((e=>t[e.key])).filter(Boolean),r=e.join(" — "),o=el("details",{class:"acc"}),s=el("summary",{},r||"(Sans titre)"),i=el("div",{class:"acc-body"});n.filter((t=>!t.inSummary)).forEach((e=>{t[e.key]&&i.append(el("p",{},el("span",{class:"badge"},e.label+":")," ",t[e.key]))})),o.append(s,i),a.append(o)})),t.innerHTML="",t.append(a)}document.addEventListener("DOMContentLoaded",async()=>{const t=document.getElementById("seminarList");if(t){const e=await loadJSON("assets/seminars.json");renderAccordion(t,e,[{key:"month",label:"Mois",inSummary:!0},{key:"title",label:"Exposé",inSummary:!0},{key:"speaker",label:"Orateur·rice",inSummary:!0},{key:"abstract",label:"Résumé",inSummary:!1},{key:"bio",label:"Bio",inSummary:!1},{key:"links",label:"Liens",inSummary:!1}])}const e=document.getElementById("articleList");if(e){const t=await loadJSON("assets/articles.json");renderAccordion(e,t,[{key:"title",label:"Titre",inSummary:!0},{key:"author",label:"Auteur·rice",inSummary:!0},{key:"summary",label:"Résumé",inSummary:!1},{key:"url",label:"Lien",inSummary:!1}])}const n=document.getElementById("workshopList");if(n){const t=await loadJSON("assets/workshops.json");renderAccordion(n,t,[{key:"title",label:"Atelier",inSummary:!0},{key:"place",label:"Lieu",inSummary:!0},{key:"date",label:"Date",inSummary:!0},{key:"description",label:"Description",inSummary:!1},{key:"inscription",label:"Inscription",inSummary:!1}])}});
+// ---------- Utils URL / année ----------
+function initYearFromURL(){
+  const url = new URL(window.location);
+  let year = url.searchParams.get('year');
+  if(!year && location.hash.startsWith('#y')) year = location.hash.slice(2);
+  const allowed = ['2025','2024','2023','2022','2021'];
+  if(!allowed.includes(String(year))) year = '2025';
+  return year;
+}
+
+function updateURL(year){
+  const url = new URL(window.location);
+  url.searchParams.set('year', year);
+  history.replaceState(null, '', url);
+  location.hash = `#y${year}`;
+}
+
+// ---------- Rendu ----------
+function seminarCard(s){
+  return `
+    <div class="seminar-card">
+      <h3 class="seminar-title">#${s.n} — ${s.title}</h3>
+      <p class="seminar-meta">${s.date} • ${s.speaker}</p>
+      <p class="seminar-abs">${s.abstract}</p>
+    </div>
+  `;
+}
+
+function padToTwelve(data, year){
+  const out = [...data];
+  for(let i = data.length; i < 12; i++){
+    out.push({ n: i+1, date: `${year}-—`, speaker: 'À confirmer', title: 'TBA', abstract: 'À venir.' });
+  }
+  return out.slice(0, 12);
+}
+
+async function loadYearData(year){
+  const list = document.getElementById('seminarList');
+  list.textContent = 'Chargement…';
+  try{
+    const res = await fetch(`data/seminars-${year}.json`, { cache: 'no-store' });
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const filled = padToTwelve(Array.isArray(data) ? data : [], year);
+    list.innerHTML = `<div class="seminar-grid">${filled.map(seminarCard).join('')}</div>`;
+  }catch(err){
+    console.error(err);
+    list.innerHTML = `
+      <div class="seminar-grid">
+        ${padToTwelve([], year).map(seminarCard).join('')}
+      </div>
+      <p class="muted mt-1">Impossible de charger <code>data/seminars-${year}.json</code>. Vérifie le chemin/fichier.</p>
+    `;
+  }
+}
+
+function setActiveTab(year){
+  document.querySelectorAll('.year-tab').forEach(btn=>{
+    const selected = btn.dataset.year === String(year);
+    btn.setAttribute('aria-selected', selected ? 'true' : 'false');
+  });
+  const panel = document.getElementById('seminarPanel');
+  panel.setAttribute('aria-labelledby', `tab-${year}`);
+}
+
+async function renderYear(year){
+  setActiveTab(year);
+  updateURL(year);
+  await loadYearData(year);
+}
+
+// ---------- Tabs (clic + clavier) ----------
+function setupYearTabs(){
+  const tabs = [...document.querySelectorAll('.year-tab')];
+  tabs.forEach((btn, i)=>{
+    btn.addEventListener('click', ()=> renderYear(btn.dataset.year));
+    btn.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowRight' || e.key === 'ArrowLeft'){
+        const dir = e.key === 'ArrowRight' ? 1 : -1;
+        const next = tabs[(i + dir + tabs.length) % tabs.length];
+        next.focus();
+      }
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        renderYear(btn.dataset.year);
+      }
+    });
+  });
+}
+
+// ---------- Init ----------
+document.addEventListener('DOMContentLoaded', async ()=>{
+  setupYearTabs();
+  const year = initYearFromURL();
+  await renderYear(year);
+
+  // année dynamique footer (si présent)
+  const ySpan = document.getElementById('year');
+  if(ySpan) ySpan.textContent = new Date().getFullYear();
+});
