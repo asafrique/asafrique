@@ -41,3 +41,31 @@
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    const form = document.getElementById('contactForm');
+    const msg  = document.getElementById('formMsg');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = (form.elements['name'].value || '').trim();
+      const email = (form.elements['email'].value || '').trim();
+      const message = (form.elements['message'].value || '').trim();
+
+      const to = 'sciencespourafrique@gmail.com';
+      const subject = encodeURIComponent('Contact ASA — ' + name);
+      const body = encodeURIComponent(
+        'Nom: ' + name + '\n' +
+        'Email: ' + email + '\n\n' +
+        'Message:\n' + message + '\n'
+      );
+
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+      if (msg) msg.textContent = "Merci ! Votre application mail s’ouvre. Si rien ne se passe, écrivez-nous à sciencespourafrique@gmail.com.";
+      form.reset();
+    }, false);
+  })();
+</script>
+
