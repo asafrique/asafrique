@@ -30,3 +30,88 @@ a{color:var(--brand-orange);text-decoration:none}a:hover{text-decoration:underli
 .btn-link{display:inline-block;padding:6px 10px;border-radius:10px;border:1px solid var(--brand-orange-line);background:var(--brand-orange-weak);color:var(--text);text-decoration:none;font-weight:600;font-size:.92rem}
 .btn-link:hover{background:rgba(245,158,11,.2);text-decoration:none}.acc .ctas{margin-top:8px;display:flex;gap:10px;flex-wrap:wrap}
 .site-footer{border-top:1px solid var(--border);padding:18px 0;margin-top:32px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+
+/* === Contact (dark card look) === */
+:root{
+  --bg:#0e141a;
+  --text:#e6edf3;
+  --muted:#9aa7b1;
+  --card:rgba(255,255,255,.03);
+  --border:1px solid rgba(255,255,255,.08);
+  --input:#161c22;
+  --input-border:#2a3441;
+  --primary:#1a73e8; /* change si besoin */
+}
+
+body{ background:var(--bg); color:var(--text); }
+
+.section h2{ margin-bottom:.25rem; }
+.section .intro{ color:var(--muted); margin-bottom:1rem; }
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:16px;
+}
+.contact-card{
+  background:var(--card);
+  border:var(--border);
+  border-radius:16px;
+  padding:16px;
+}
+.form-card{ grid-column:span 7; }
+.info-card{ grid-column:span 5; }
+
+.contact-card h3{ margin:0 0 .5rem; }
+.spaced{ margin-top:.75rem; }
+.muted{ color:var(--muted); }
+
+.row-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.mt{ display:block; margin-top:10px; }
+
+#contactForm input,
+#contactForm textarea{
+  width:100%;
+  padding:10px 12px;
+  border-radius:10px;
+  background:var(--input);
+  color:var(--text);
+  border:1px solid var(--input-border);
+  outline:none;
+}
+#contactForm input::placeholder,
+#contactForm textarea::placeholder{ color:#7b8792; }
+
+#contactForm input:focus,
+#contactForm textarea:focus{
+  border-color:#3b82f6; /* liseré focus */
+  box-shadow:0 0 0 3px rgba(59,130,246,.15);
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-top:10px;
+}
+.actions .btn{
+  padding:10px 16px;
+  border-radius:12px;
+  border:0;
+  background:var(--primary);
+  color:#fff;
+  cursor:pointer;
+  font-weight:600;
+}
+#formMsg{ color:var(--muted); }
+
+/* Responsive */
+@media (max-width: 900px){
+  .form-card, .info-card{ grid-column:span 12; }
+  .row-2{ grid-template-columns:1fr; }
+}
+
