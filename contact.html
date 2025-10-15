@@ -1,23 +1,128 @@
-<!doctype html><html lang="fr"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Contact — ASA Afrique</title><meta name="theme-color" content="#000000"/>
-<link rel="stylesheet" href="assets/style.css"/><link rel="icon" href="assets/logoasa.jpg"/></head><body>
-<header class="site-header"><div class="container header-inner">
-<a class="brand" href="index.html"><img src="assets/logoasa.jpg" class="brand-logo" alt="Logo ASA" loading="lazy"/><span>ASA</span></a>
-<nav class="nav"><a href="index.html" class="">Accueil</a>
-<a href="activities.html">Nos activités</a>
-<a href="about.html" class="">À propos</a>
-<a href="contact.html" class="active">Contact</a></nav>
-<button class="nav-toggle" aria-label="Ouvrir le menu">☰</button></div></header>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — ASA Afrique</title>
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="assets/logoasa.jpg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logoasa.jpg" class="brand-logo" alt="Logo ASA" loading="lazy" />
+        <span>ASA</span>
+      </a>
 
-<main class="container section">
-  <h1>Contact</h1><p>Écrivez-nous ou suivez nos actualités :</p>
-  <div class="social" style="display:flex;gap:12px;flex-wrap:wrap">
-    <a class="btn-link" href="mailto:sciencespourafrique@gmail.com">Gmail</a>
-    <a class="btn-link" href="https://www.facebook.com/profile.php?id=61581832300614" target="_blank" rel="noopener">Facebook</a>
-    <a class="btn-link" href="https://www.instagram.com/sci4africa/" target="_blank" rel="noopener">Instagram</a>
-    <a class="btn-link" href="https://www.linkedin.com/in/association-sciences-pour-l-afrique-asa-4692572aa/" target="_blank" rel="noopener">LinkedIn</a>
-  </div>
-</main>
-<footer class="site-footer"><div class="container footer-inner"><p>© <span id="year"></span> ASA — Association Sciences pour l’Afrique</p></div></footer>
-<script src="assets/app.js" defer></script></body></html>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="activities.html">Nos activités</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h1>Contact & Partenariats</h1>
+        <p class="intro">Vous souhaitez collaborer, parrainer un programme ou proposer une intervention ? Écrivez-nous.</p>
+
+        <div class="grid" style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;">
+          <!-- Form -->
+          <article class="card" style="grid-column:span 7; padding:16px; border-radius:16px; border:var(--border,1px solid rgba(255,255,255,.12)); background:rgba(255,255,255,.02);">
+            <form id="contactForm">
+              <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;">
+                <label>Nom<br>
+                  <input name="name" required placeholder="Votre nom"
+                         style="width:100%;padding:10px;border-radius:10px;border:var(--border,1px solid rgba(255,255,255,.15));background:rgba(255,255,255,.02);color:var(--text,inherit)">
+                </label>
+                <label>Email<br>
+                  <input name="email" type="email" required placeholder="vous@exemple.org"
+                         style="width:100%;padding:10px;border-radius:10px;border:var(--border,1px solid rgba(255,255,255,.15));background:rgba(255,255,255,.02);color:var(--text,inherit)">
+                </label>
+              </div>
+
+              <label style="display:block;margin-top:10px;">Message<br>
+                <textarea name="message" rows="6" required placeholder="Dites-nous en plus…"
+                          style="width:100%;padding:10px;border-radius:10px;border:var(--border,1px solid rgba(255,255,255,.15));background:rgba(255,255,255,.02);color:var(--text,inherit)"></textarea>
+              </label>
+
+              <div style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+                <button class="btn" type="submit" style="padding:10px 16px;border-radius:10px;border:0;background:#1a73e8;color:#fff;cursor:pointer;">Envoyer</button>
+                <small id="formMsg" style="color:var(--muted, #888)">Nous répondons sous 48h.</small>
+              </div>
+            </form>
+          </article>
+
+          <!-- Coordinates -->
+          <article class="card" style="grid-column:span 5; padding:16px; border-radius:16px; border:var(--border,1px solid rgba(255,255,255,.12)); background:rgba(255,255,255,.02);">
+            <h3>Coordonnées</h3>
+            <p style="color:var(--muted,#888);line-height:1.6">
+              Email : <a href="mailto:sciencespourafrique@gmail.com">sciencespourafrique@gmail.com</a><br>
+              Adresse : Athènes, Grèce (association internationale)
+            </p>
+
+            <h3 style="margin-top:12px;">Réseaux</h3>
+            <p style="color:var(--muted,#888);line-height:1.8">
+              <a href="https://www.facebook.com/profile.php?id=61581832300614" target="_blank" rel="noopener">Facebook</a> •
+              <a href="https://www.instagram.com/sci4africa/" target="_blank" rel="noopener">Instagram</a> •
+              <a href="https://www.linkedin.com/in/association-sciences-pour-l-afrique-asa-4692572aa/" target="_blank" rel="noopener">LinkedIn</a> •
+              <a href="mailto:sciencespourafrique@gmail.com">Gmail</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> ASA — Association Sciences pour l’Afrique</p>
+    </div>
+  </footer>
+
+  <!-- Your global JS -->
+  <script src="assets/app.js" defer></script>
+
+  <!-- Lightweight mailto handler (no backend required) -->
+  <script>
+    (function () {
+      const form = document.getElementById('contactForm');
+      const msg  = document.getElementById('formMsg');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = (form.elements['name'].value || '').trim();
+        const email = (form.elements['email'].value || '').trim();
+        const message = (form.elements['message'].value || '').trim();
+
+        const to = 'sciencespourafrique@gmail.com';
+        const subject = encodeURIComponent('Contact ASA — ' + name);
+        const body = encodeURIComponent(
+          'Nom: ' + name + '\n' +
+          'Email: ' + email + '\n\n' +
+          'Message:\n' + message + '\n'
+        );
+
+        // Open the user's email client
+        window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+
+        // UI feedback
+        if (msg) {
+          msg.textContent = 'Merci ! Votre application mail va s’ouvrir. Si rien ne se passe, écrivez-nous à sciencespourafrique@gmail.com.';
+          msg.style.color = 'var(--text,#222)';
+        }
+        form.reset();
+      }, false);
+    })();
+  </script>
+</body>
+</html>
