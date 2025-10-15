@@ -32,63 +32,46 @@ a{color:var(--brand-orange);text-decoration:none}a:hover{text-decoration:underli
 .site-footer{border-top:1px solid var(--border);padding:18px 0;margin-top:32px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
 
 /* === Contact dark theme === */
-:root {
-  --bg:#0f1418;
-  --text:#e6edf3;
-  --muted:#9aa7b1;
-  --card:rgba(255,255,255,.03);
-  --border:1px solid rgba(255,255,255,.08);
-  --primary:#1a73e8;
-}
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact & Partenariats</h2>
+    <p class="intro">Vous souhaitez collaborer, parrainer un programme ou proposer une intervention ? Écrivez-nous.</p>
+    <div class="grid contact-grid">
+      <article class="card contact-card form-card">
+        <form id="contactForm">
+          <div class="row-2">
+            <label>Nom<br>
+              <input name="name" required placeholder="Votre nom">
+            </label>
+            <label>Email<br>
+              <input name="email" type="email" required placeholder="vous@exemple.org">
+            </label>
+          </div>
+          <label class="mt">
+            Message<br>
+            <textarea name="message" rows="5" required placeholder="Dites-nous en plus…"></textarea>
+          </label>
+          <div class="actions">
+            <button class="btn" type="submit">Envoyer</button>
+            <small id="formMsg">Nous répondons sous 48h.</small>
+          </div>
+        </form>
+      </article>
 
-body { background:var(--bg); color:var(--text); }
-
-#contact.section { padding:3rem 1rem; }
-#contact h2 { margin-bottom:.3rem; }
-#contact .intro { color:var(--muted); margin-bottom:1rem; }
-
-#contact .grid {
-  display:grid;
-  grid-template-columns:repeat(12,minmax(0,1fr));
-  gap:16px;
-}
-
-#contact .card {
-  background:var(--card);
-  border:var(--border);
-  border-radius:16px;
-  padding:16px;
-}
-
-#contact .card:first-child { grid-column:span 7; }
-#contact .card:last-child { grid-column:span 5; }
-
-#contact input,
-#contact textarea {
-  width:100%;
-  padding:10px;
-  border-radius:10px;
-  border:1px solid rgba(255,255,255,.12);
-  background:#161c22;
-  color:var(--text);
-}
-
-#contact input::placeholder,
-#contact textarea::placeholder { color:#7a8694; }
-
-#contact .btn {
-  padding:10px 16px;
-  border-radius:10px;
-  border:0;
-  background:var(--primary);
-  color:#fff;
-  cursor:pointer;
-}
-
-#contact small { color:var(--muted); }
-#contact a { color:var(--primary); text-decoration:none; }
-#contact a:hover { text-decoration:underline; }
-
-@media(max-width:900px){
-  #contact .card { grid-column:span 12; }
-}
+      <article class="card contact-card info-card">
+        <h3>Coordonnées</h3>
+        <p class="muted">
+          Email : <a href="mailto:sciencespourafrique@gmail.com">sciencespourafrique@gmail.com</a><br>
+          Adresse : Athènes, Grèce
+        </p>
+        <h3 class="spaced">Réseaux</h3>
+        <p class="muted">
+          <a href="https://www.facebook.com/profile.php?id=61581832300614" target="_blank" rel="noopener">Facebook</a> •
+          <a href="https://www.instagram.com/sci4africa/" target="_blank" rel="noopener">Instagram</a> •
+          <a href="https://www.linkedin.com/in/association-sciences-pour-l-afrique-asa-4692572aa/" target="_blank" rel="noopener">LinkedIn</a> •
+          <a href="mailto:sciencespourafrique@gmail.com">Gmail</a>
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
