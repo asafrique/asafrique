@@ -78,14 +78,12 @@ a{color:var(--brand-orange);text-decoration:none}a:hover{text-decoration:underli
 
 /* === Contact (dark card look) === */
 :root{
-  --bg:#0e141a;
+ --bg:#0f1418;
   --text:#e6edf3;
   --muted:#9aa7b1;
   --card:rgba(255,255,255,.03);
   --border:1px solid rgba(255,255,255,.08);
-  --input:#161c22;
-  --input-border:#2a3441;
-  --primary:#1a73e8; /* change si besoin */
+  --primary:#1a73e8;
 }
 
 body{ background:var(--bg); color:var(--text); }
