@@ -263,3 +263,44 @@ a{color:var(--brand-orange);text-decoration:none}a:hover{text-decoration:underli
 #contact .btn:hover,
 #contact button[type="submit"]:hover { filter: brightness(1.07); }
 
+/* Bouton de la hero: largeur auto sur desktop, centré */
+.hero .btn,
+.btn-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:auto;                /* prend juste la largeur du texte */
+  max-width:100%;
+  padding:0.9rem 1.5rem;     /* ajuste la taille du pill */
+  border-radius:9999px;      /* pill */
+}
+
+/* Si ta grille a un conteneur d'actions */
+.hero .actions{
+  display:flex;
+  justify-content:center;    /* centre le bouton */
+}
+
+/* Garde full-width en mobile si tu veux */
+@media (max-width: 639px){
+  .hero .btn,
+  .btn-cta{
+    width:100%;
+  }
+}
+
+/* Si une règle existante force .btn à width:100%, on la neutralise ici */
+.hero .btn,
+.btn-cta{ width:auto !important; }   /* à utiliser seulement si nécessaire */
+
+/* (Optionnel) style du dégradé jaune s'il n'est pas déjà appliqué via .btn */
+.btn-cta{
+  background:linear-gradient(180deg,#ffe888 0%, #f5cb45 100%);
+  color:#111;
+  font-weight:700;
+  box-shadow:0 2px 0 rgba(0,0,0,.25) inset, 0 6px 24px rgba(245,203,69,.25);
+}
+.btn-cta:hover{ filter:brightness(1.03); }
+.btn-cta:active{ transform:translateY(1px); }
+
+
