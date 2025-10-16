@@ -31,99 +31,41 @@ a{color:var(--brand-orange);text-decoration:none}a:hover{text-decoration:underli
 .btn-link:hover{background:rgba(245,158,11,.2);text-decoration:none}.acc .ctas{margin-top:8px;display:flex;gap:10px;flex-wrap:wrap}
 .site-footer{border-top:1px solid var(--border);padding:18px 0;margin-top:32px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
 
-/* === Contact dark theme === */
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact & Partenariats</h2>
-    <p class="intro">Vous souhaitez collaborer, parrainer un programme ou proposer une intervention ? Écrivez-nous.</p>
-    <div class="grid contact-grid">
-      <article class="card contact-card form-card">
-        <form id="contactForm">
-          <div class="row-2">
-            <label>Nom<br>
-              <input name="name" required placeholder="Votre nom">
-            </label>
-            <label>Email<br>
-              <input name="email" type="email" required placeholder="vous@exemple.org">
-            </label>
-          </div>
-          <label class="mt">
-            Message<br>
-            <textarea name="message" rows="5" required placeholder="Dites-nous en plus…"></textarea>
-          </label>
-          <div class="actions">
-            <button class="btn" type="submit">Envoyer</button>
-            <small id="formMsg">Nous répondons sous 48h.</small>
-          </div>
-        </form>
-      </article>
-
-      <article class="card contact-card info-card">
-        <h3>Coordonnées</h3>
-        <p class="muted">
-          Email : <a href="mailto:sciencespourafrique@gmail.com">sciencespourafrique@gmail.com</a><br>
-          Adresse : Athènes, Grèce
-        </p>
-        <h3 class="spaced">Réseaux</h3>
-        <p class="muted">
-          <a href="https://www.facebook.com/profile.php?id=61581832300614" target="_blank" rel="noopener">Facebook</a> •
-          <a href="https://www.instagram.com/sci4africa/" target="_blank" rel="noopener">Instagram</a> •
-          <a href="https://www.linkedin.com/in/association-sciences-pour-l-afrique-asa-4692572aa/" target="_blank" rel="noopener">LinkedIn</a> •
-          <a href="mailto:sciencespourafrique@gmail.com">Gmail</a>
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
-/* === Contact (dark card look) === */
-:root{
- --bg:#0f1418;
-  --text:#e6edf3;
-  --muted:#9aa7b1;
-  --card:rgba(255,255,255,.03);
-  --border:1px solid rgba(255,255,255,.08);
-  --primary:#1a73e8;
-}
-
-body{ background:var(--bg); color:var(--text); }
-
-.section h2{ margin-bottom:.25rem; }
-.section .intro{ color:var(--muted); margin-bottom:1rem; }
-
+/* ===== Contact page (match site look) ===== */
 .contact-grid{
   display:grid;
   grid-template-columns:repeat(12,minmax(0,1fr));
   gap:16px;
 }
+
 .contact-card{
-  background:var(--card);
-  border:var(--border);
+  background:var(--card, rgba(255,255,255,.03));
+  border:var(--border, 1px solid rgba(255,255,255,.08));
   border-radius:16px;
   padding:16px;
 }
+
 .form-card{ grid-column:span 7; }
 .info-card{ grid-column:span 5; }
-
-.contact-card h3{ margin:0 0 .5rem; }
-.spaced{ margin-top:.75rem; }
-.muted{ color:var(--muted); }
 
 .row-2{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:10px;
 }
+
 .mt{ display:block; margin-top:10px; }
+.spaced{ margin-top:12px; }
+.muted{ color:var(--muted, #9aa7b1); }
 
 #contactForm input,
 #contactForm textarea{
   width:100%;
   padding:10px 12px;
   border-radius:10px;
-  background:var(--input);
-  color:var(--text);
-  border:1px solid var(--input-border);
+  background:var(--input, #161c22);
+  color:var(--text, #e6edf3);
+  border:1px solid var(--input-border, #2a3441);
   outline:none;
 }
 #contactForm input::placeholder,
@@ -131,7 +73,7 @@ body{ background:var(--bg); color:var(--text); }
 
 #contactForm input:focus,
 #contactForm textarea:focus{
-  border-color:#3b82f6; /* liseré focus */
+  border-color:#3b82f6;
   box-shadow:0 0 0 3px rgba(59,130,246,.15);
 }
 
@@ -145,16 +87,17 @@ body{ background:var(--bg); color:var(--text); }
   padding:10px 16px;
   border-radius:12px;
   border:0;
-  background:var(--primary);
+  background:var(--primary, #1a73e8);
   color:#fff;
-  cursor:pointer;
   font-weight:600;
+  cursor:pointer;
 }
-#formMsg{ color:var(--muted); }
+
+#contact a{ color:var(--primary, #1a73e8); text-decoration:none; }
+#contact a:hover{ text-decoration:underline; }
 
 /* Responsive */
 @media (max-width: 900px){
   .form-card, .info-card{ grid-column:span 12; }
   .row-2{ grid-template-columns:1fr; }
 }
-
