@@ -3,7 +3,9 @@
   <div class="container">
     <h2>Contact & Partenariats</h2>
     <p class="intro">Vous souhaitez collaborer, parrainer un programme ou proposer une intervention ? Écrivez-nous.</p>
+
     <div class="grid contact-grid">
+      <!-- Form -->
       <article class="card contact-card form-card">
         <form id="contactForm">
           <div class="row-2">
@@ -14,10 +16,11 @@
               <input name="email" type="email" required placeholder="vous@exemple.org">
             </label>
           </div>
-          <label class="mt">
-            Message<br>
+
+          <label class="mt">Message<br>
             <textarea name="message" rows="5" required placeholder="Dites-nous en plus…"></textarea>
           </label>
+
           <div class="actions">
             <button class="btn" type="submit">Envoyer</button>
             <small id="formMsg">Nous répondons sous 48h.</small>
@@ -25,13 +28,15 @@
         </form>
       </article>
 
+      <!-- Infos -->
       <article class="card contact-card info-card">
         <h3>Coordonnées</h3>
         <p class="muted">
           Email : <a href="mailto:sciencespourafrique@gmail.com">sciencespourafrique@gmail.com</a><br>
           Adresse : Paris, France
         </p>
-        <h3 class="spaced">Réseaux sociaux </h3>
+
+        <h3 class="spaced">Réseaux</h3>
         <p class="muted">
           <a href="https://www.facebook.com/profile.php?id=61581832300614" target="_blank" rel="noopener">Facebook</a> •
           <a href="https://www.instagram.com/sci4africa/" target="_blank" rel="noopener">Instagram</a> •
@@ -41,31 +46,3 @@
     </div>
   </div>
 </section>
-
-<script>
-  (function () {
-    const form = document.getElementById('contactForm');
-    const msg  = document.getElementById('formMsg');
-    if (!form) return;
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = (form.elements['name'].value || '').trim();
-      const email = (form.elements['email'].value || '').trim();
-      const message = (form.elements['message'].value || '').trim();
-
-      const to = 'sciencespourafrique@gmail.com';
-      const subject = encodeURIComponent('Contact ASA — ' + name);
-      const body = encodeURIComponent(
-        'Nom: ' + name + '\n' +
-        'Email: ' + email + '\n\n' +
-        'Message:\n' + message + '\n'
-      );
-
-      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-      if (msg) msg.textContent = "Merci ! Votre application mail s’ouvre. Si rien ne se passe, écrivez-nous à sciencespourafrique@gmail.com.";
-      form.reset();
-    }, false);
-  })();
-</script>
-
