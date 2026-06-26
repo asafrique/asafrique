@@ -1,0 +1,23 @@
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vulgarisation — ASA Afrique</title><meta name="theme-color" content="#000000"/>
+<link rel="stylesheet" href="assets/style.css"/><link rel="icon" href="assets/logoasa.jpg"/></head><body>
+<header class="site-header"><div class="container header-inner">
+<a class="brand" href="index.html"><img src="assets/logoasa.jpg" class="brand-logo" alt="Logo ASA" loading="lazy"/><span>ASA</span></a>
+<nav class="nav"><a href="index.html" class="">Accueil</a>
+<a href="activities.html">Nos activités</a>
+<a href="about.html" class="">À propos</a>
+<a href="contact.html" class="">Contact</a></nav>
+<button class="nav-toggle" aria-label="Ouvrir le menu">☰</button></div></header>
+
+<main class="container section">
+  <h1>Vulgarisation</h1><p class="muted">Articles accessibles pour partager la science.</p>
+  <div id="articleList">Chargement…</div>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><p>© <span id="year"></span> ASA — Association Sciences pour l’Afrique</p></div></footer>
+<script>
+document.addEventListener('DOMContentLoaded', async ()=>{
+  const c=document.getElementById('articleList'); const d=await loadJSON('assets/articles.json'); renderAccordion(c,d);
+});
+</script>
+<script src="assets/app.js" defer></script></body></html>
