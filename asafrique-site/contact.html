@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Contact — ASA</title>
+<link rel="icon" href="/assets/logoasa.jpg"/><link rel="stylesheet" href="/assets/style.css"/>
+</head><body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img src="/assets/logoasa.jpg" alt="Logo ASA" />
+      <span data-i18n="home_title">Association Sciences pour l’Afrique</span>
+    </a>
+    <div class="lang-switch">
+      <button data-lang="fr" class="active">FR</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <div class="hamburger" aria-label="Menu"><span></span><span></span><span></span></div>
+    <nav class="nav-links">
+      <a class="" href="/index.html" data-i18n="nav_home">Accueil</a>
+      <a class="" href="/activities/index.html" data-i18n="nav_activities">Nos activités</a>
+      <a class="" href="/about.html" data-i18n="nav_about">À propos</a>
+      <a class="active" href="/contact.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2>Contact & Réseaux</h2>
+    <p class="intro">Écrivez-nous pour proposer un séminaire, un atelier, ou un partenariat.</p>
+    <div class="grid">
+      <article class="card" style="grid-column:span 7;">
+        <form id="contactForm">
+          <label>Nom<br><input required placeholder="Votre nom" style="width:100%;padding:10px;border-radius:10px;border:var(--border);background:rgba(255,255,255,.02);color:var(--text)"></label>
+          <label style="display:block;margin-top:10px;">Email<br><input type="email" required placeholder="vous@exemple.org" style="width:100%;padding:10px;border-radius:10px;border:var(--border);background:rgba(255,255,255,.02);color:var(--text)"></label>
+          <label style="display:block;margin-top:10px;">Message<br><textarea rows="6" required placeholder="Votre message…" style="width:100%;padding:10px;border-radius:10px;border:var(--border);background:rgba(255,255,255,.02);color:var(--text)"></textarea></label>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:10px;">
+            <button class="btn" type="submit">Envoyer</button>
+            <small id="formMsg" style="color:var(--muted)">Réponse sous 48h.</small>
+          </div>
+        </form>
+      </article>
+      <article class="card" style="grid-column:span 5;">
+        <h3>Coordonnées</h3><div class="social">  <a href="mailto:sciencespourafrique@gmail.com"><span class="icon"><img src="/assets/icons/mail.svg" alt=""></span><span>sciencespourafrique@gmail.com</span></a>  <a href="https://www.facebook.com/profile.php?id=61581832300614" target="_blank" rel="noopener"><span class="icon"><img src="/assets/icons/facebook.svg" alt=""></span><span>Facebook</span></a>  <a href="https://www.instagram.com/sci4africa/" target="_blank" rel="noopener"><span class="icon"><img src="/assets/icons/instagram.svg" alt=""></span><span>@sci4africa</span></a>  <a href="https://www.linkedin.com/in/association-sciences-pour-l-afrique-asa-4692572aa/" target="_blank" rel="noopener"><span class="icon"><img src="/assets/icons/linkedin.svg" alt=""></span><span>LinkedIn</span></a>  </div><h3 style="margin-top:12px;">Informations</h3>
+        <p style="color:var(--muted)">
+          <strong>Email</strong> : <a href="mailto:sciencespourafrique@gmail.com">sciencespourafrique@gmail.com</a><br>
+          <strong>Facebook</strong> : <a href="https://www.facebook.com/profile.php?id=61581832300614">Page ASA</a><br>
+          <strong>Instagram</strong> : <a href="https://www.instagram.com/sci4africa/">@sci4africa</a><br>
+          <strong>LinkedIn</strong> : <a href="https://www.linkedin.com/in/association-sciences-pour-l-afrique-asa-4692572aa/">Association Sciences pour l’Afrique</a>
+        </p>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+    <small>© <span id="year"></span> ASA. <span data-i18n="footer_note">Tous droits réservés.</span></small>
+    <small><a href="/index.html">↑ Top</a></small>
+  </div>
+</footer>
+<script src="/assets/app.js"></script>
+
+<script>
+// fake form
+const form=document.getElementById('contactForm'); const msg=document.getElementById('formMsg');
+form.addEventListener('submit', (e)=>{e.preventDefault(); msg.textContent='Merci ! Votre message a été reçu.'; form.reset();});
+</script>
+</body></html>
