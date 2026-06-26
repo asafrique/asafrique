@@ -1,1 +1,0 @@
-Site ASA Afrique — fond noir, onglets orange, séminaires par année (accordéons). Déployer via GitHub Pages (branch main / root).
