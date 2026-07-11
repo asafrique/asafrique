@@ -1,0 +1,138 @@
+[
+  {
+    "month": "Janvier 2024",
+    "title": "Stabilité et contrôle d'équations aux différences",
+    "speaker": "Guilherme Mazanti (Inria & L2S, CentraleSupélec, France)",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "website": "https://pages.saclay.inria.fr/guilherme.mazanti/",
+    "poster": "assets/posters/2024-01-14-mazanti.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Février 2024",
+    "title": "Contrôle saturé pour certaines EDP: théorie et applications",
+    "speaker": "Christophe Prieur (Directeur de recherche CNRS, GIPSA-lab, CNRS/Université Grenoble Alpes)",
+    "abstract": "Dans cette présentation, l'accent sera mis sur la stabilité des équations aux dérivées partielles avec des contrôles limités en amplitude (comme ceux obtenus via une saturation). Nous étudierons différentes classes d'équations comme une équation de réaction-diffusion, l'équation des ondes et l'équation de Korteweg-de-Vries, essentiellement avec des contrôles frontière. Nous passerons en revue certaines techniques pour l'analyse de la stabilité et le calcul de contrôles frontière pour de telles EDP paraboliques ou hyperboliques. Une application dans le domaine de la fusion nucléaire conclura cet exposé.",
+    "bio": "Christophe PRIEUR est Directeur de recherche CNRS au laboratoire Grenoble Image, Parole, Signal, Automatique (GIPSA-lab - CNRS/Université Grenoble Alpes), Christophe Prieur y étudie les systèmes dynamiques depuis une dizaine d'années. Ses travaux dans ce domaine ont débouché sur diverses applications dans le domaine de la navigation et le suivi d'objets, la dynamique des fluides ou le contrôle de la fusion nucléaire. Ses recherches les plus récentes portent sur les systèmes hybrides, le contrôle des équations aux dérivées partielles et les systèmes de commande non-linéaires. Pour ses contributions scientifiques à cette dernière thématique, Christophe Prieur a récemment été nommé Fellow de l'Institute of Electrical and Electronics Engineers (IEEE).",
+    "website": "https://www.gipsa-lab.grenoble-inp.fr/~christophe.prieur/",
+    "poster": "assets/posters/2024-02-11-prieur.jpg",
+    "slides": "assets/slides/2024-02-11-prieur-slides.pdf",
+    "video": ""
+  },
+  {
+    "month": "Mars 2024",
+    "title": "Problèmes elliptiques impliquant l'opérateur P-laplacien fractionnaire en présence d'un potentiel à signe indéfini",
+    "speaker": "Oumarou Asso",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "poster": "assets/posters/2024-03-10-asso.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Avril 2024",
+    "title": "Output regulation for nonlinear systems and PDE with some example",
+    "speaker": "Daniele Astolfi (Chargé de recherche CNRS, LAGEPP, Lyon, France)",
+    "abstract": "The internal model principle for the problem of linear robust output regulation problem was established in the 70. It establishes that in order to perfectly track or reject disturbances robustly with respect to small model uncertainties, the controller needs to incorporate a copy of the model generating such signals. A typical well known case is the use of integral action (e.g. PID regulators) in order to track/reject constant signals. In this talk, we revisit the general linear case providing the main ideas and tools to design internal-model based regulators. Then, some extensions are illustrated for nonlinear and PDE systems. Finally, some engineering examples are shown, with particular relevance to the case of harmonic regulation for mechanical ventilation problem.",
+    "bio": "Daniele Astolfi received the B.S. and M.S. degrees in automation engineering from the University of Bologna, Italy, in 2009 and 2012, respectively. He obtained a joint Ph.D. degree in Control Theory from the University of Bologna, Italy, and from Mines ParisTech, France, in 2016. In 2016 and 2017, he has been a Research Assistant at the University of Lorraine (CRAN), Nancy, France. Since 2018, he is a CNRS Researcher at LAGEPP, Lyon, France. His research interests include observer design, feedback stabilization and output regulation for nonlinear systems, networked control systems, hybrid systems, and multi-agent systems. He serves as an associate editor of the IFAC journal Automatica since 2018 and for European Journal of Control since 2023. He was a recipient of the 2016 Best Italian Ph.D. Thesis Award in Automatica given by Società Italiana Docenti e Ricercatori in Automatica (SIDRA, Italian Society of Professors and Researchers in Automation Engineering), and nominated for best student paper award at ECC 2016 and best paper award at NOLCOS 2019.",
+    "website": "https://sites.google.com/site/astolfidaniele/home",
+    "poster": "assets/posters/2024-04-14-astolfi.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Mai 2024",
+    "title": "Interacting particle algorithms for a linear filtering problem with Poisson-distributed observations",
+    "speaker": "Olga Yufereva",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "poster": "assets/posters/2024-05-12-yufereva.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Juin 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Juillet 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Août 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Septembre 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Octobre 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Novembre 2024",
+    "title": "Quantum Computing and Quantum Machine Learning",
+    "speaker": "Aulan Zahoundo",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "poster": "assets/posters/2024-11-12-zahoundo.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Novembre 2024",
+    "title": "Existence et régularité de flot de courbure moyenne non locale des graphes",
+    "speaker": "Anoumou Joel Attiogbe",
+    "abstract": "Dans cet exposé, nous considérons le problème géométrique des graphes entiers en mouvement par courbure moyenne fractionnaire. Pour cela, nous étudions l'équation d'évolution quasi linéaire non locale associée, satisfaite par la famille des fonctions décrivant les graphes. Nous obtenons, en utilisant une approche des semi-groupes analytiques, l'existence en temps petits, l'unicité et la régularité optimale Hölder en temps et en espace de solutions classiques de l'équation non locale, dépendant de la régularité du graphe initial. La méthode permet également d'obtenir des estimations de régularité C∞ des graphes évolutifs pour des temps positifs. Ces résultats ont été obtenus dans un travail conjoint avec M. M. Fall et T. Weth.",
+    "bio": "",
+    "poster": "assets/posters/2024-11-12-anoumou.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Décembre 2024",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2024 (mois à confirmer)",
+    "title": "(Titre à confirmer)",
+    "speaker": "Clotilde Djuikem (University of Manitoba, Canada)",
+    "abstract": "Fungal diseases cause serious damages in crop worldwide. In particular, coffee leaf rust (CLR), caused by fungus Hemileia vastatrix attacks coffee leaves and reduces coffee yield. This paper presents a multi-seasonal model of the CLR development in the coffee plantation with continuous dynamics during the rainy season and a discrete event to represent the simpler dynamics during the dry season. Biological control using hyperparasites through one or more discrete introduction events over the year is then added. Analytical and semi-numerical studies are performed to identify how much and how frequently hyperparasites need to be introduced through the definition of a threshold value, as a function of various parameters. We show that the best strategy to efficiently control the disease depends on the hyperparasite mortality: low mortality parasites need be released only once a year, while high mortality parasites should be released more frequently to ensure their persistence in the plantation. This work hence provides qualitative and quantitative bases for the deployment of hyperparasite-based biocontrol, a promising alternative to fungicides for rust control.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  }
+]

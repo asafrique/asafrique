@@ -1,0 +1,115 @@
+[
+  {
+    "month": "Janvier 2025",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Février 2025",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Mars 2025",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Avril 2025",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Mai 2025",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Juin 2025",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Juillet 2025",
+    "title": "Stabilisation d'une classe de systèmes discrets à retard",
+    "speaker": "Ikram El Haskouki (ENS Casablanca, Maroc)",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "poster": "assets/posters/2025-07-13-el-haskouki.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Août 2025",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Septembre 2025",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Octobre 2025",
+    "title": "Optimal control problem with state constraints for cancer chemotherapy and treatment optimization",
+    "speaker": "David Lassounon (INSA-Rennes, France)",
+    "abstract": "Problème de contrôle optimal avec contraintes d'état appliqué à la chimiothérapie et l'optimisation de traitement.",
+    "bio": "Enseignant-chercheur à l'INSA Rennes.",
+    "poster": "assets/posters/2025-10-12-lassounon.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Novembre 2025",
+    "title": "The Influence of Active Boundary Control and Lower-Order Passive Distributed Dampers on the Stability of Serially Connected Elastic and Piezoelectric Smart Sensor Designs",
+    "speaker": "Mohammad Akil (UPHF Valenciennes, France)",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "website": "https://sites.google.com/view/mohammad-akil/home",
+    "poster": "assets/posters/2025-11-09-akil.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Décembre 2025",
+    "title": "Multiagent Reinforcement Learning for Traffic Signal Control",
+    "speaker": "Mohammed Safwen Markou (Tunis, Tunisie)",
+    "abstract": "Approches RL multi-agents pour l'optimisation coordonnée des feux de signalisation.",
+    "bio": "Chercheur à Tunis.",
+    "poster": "assets/posters/2025-12-14-markou.jpg",
+    "slides": "",
+    "video": ""
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "month": "Janvier 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Février 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Mars 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Avril 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Mai 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Juin 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Juillet 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Août 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Septembre 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Octobre 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Novembre 2023",
+    "title": "Compressible Viscous Fluid Model: The Effective Flux in the Constant to Density-Dependent Viscosity Case",
+    "speaker": "Marcel Zodji (PhD student)",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "poster": "assets/posters/2023-11-12-zodji-compressible-fluid.jpg",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "Décembre 2023",
+    "title": "(À compléter)",
+    "speaker": "—",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2023 (mois à confirmer)",
+    "title": "Facteurs prédictifs du Sevrage TABAgique chez les fumeurs atteints de maladies Cardio-Vasculaires et de leurs facteurs de risque dans la base nationale des consultations de Tabacologie CDT-net (STABA-CV)",
+    "speaker": "Ingrid Allagbé (Hôpital Georges Pompidou de Paris)",
+    "abstract": "Contexte : Le tabagisme représente un facteur de risque Majeur et modifiable de maladies cardiovasculaires (MCV), en particulier chez les femmes. En France, la prévalence du tabac est parmi les plus élevées d'Europe. Cependant, l'identification des facteurs associés au sevrage tabagique dans les populations à haut risque cardiovasculaire (CV) reste peu étudiée. L'objectif de ce travail de thèse est tout d'abord de dresser l'état des connaissances actuelles sur l'association entre la consommation de tabac et le risque de MCV chez les femmes à travers une revue de littérature. Puis, à l'aide de la base nationale informatisée des consultations de tabacologie CDT-net, de décrire le profil sociodémographique, médical et tabacologique des consultants et de rechercher les facteurs prédictifs de sevrage tabagique et leurs disparités en fonction du sexe.\n\nMots clés : Risque cardiovasculaire, Consultations de tabacologie, sevrage tabagique, femmes, traitement de substitution nicotinique, Varenicline.",
+    "bio": "Chercheur, Hôpital Georges Pompidou de Paris, Service d'addictologie Associée à l'Université de Dijon.",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2023 (mois à confirmer)",
+    "title": "(Titre à confirmer)",
+    "speaker": "Romziath Bidouan",
+    "abstract": "In this présentation, we study the problem of control of piezoelectric equations in a domain Ω. Indeed, we use the electromagnetic wave to control the deformation of piezoelectric bodies through the current density j on the boundary Γ, the current density J in Ω, the electric charge density q in Ω, and h the surface force on ΓN. To construct those control laws, we use the a priori estimation technique.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2023 (mois à confirmer)",
+    "title": "(Titre à confirmer)",
+    "speaker": "Ousmane Koutou (Université Joseph Ki-Zerbo, Ouagadougou)",
+    "abstract": "In this talk, I will present a mathematical model with a standard incidence rate to assess the role of media such as Facebook, Television, Radio and Tweeter in the mitigation of the outbreak of COVID19. The basic reproduction number R0 which is the threshold dynamics parameter between the disappearance and the persistence of the disease has been calculated. And, it is obvious to see that it varies directly to the number of hospitalized people, asymptomatic, symptomatic carriers and the impact of media coverage. The local and the global stabilities of the model have also been investigated by using the Routh-Hurwitz criterion and the Lyapunov's functional technique, respectively. Furthermore, we have performed a local sensitivity analysis to assess the impact of any variation in each one of the model parameter on the threshold R0 and the course of the disease accordingly. We have also computed the approximative rate at which herd immunity will occur when any control measure is implemented. To finish, we have presented some numerical simulation result by using some available data from the literature to corroborate our theoretical findings.",
+    "bio": "Department of mathematics, Université Joseph Ki-Zerbo, Ouagadougou.",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2023 (mois à confirmer)",
+    "title": "(Titre à confirmer)",
+    "speaker": "Swann Marx (LN2S, Nantes, France)",
+    "abstract": "Dans cet exposé, j'expliquerai comment analyser la stabilité asymptotique de systèmes couplés admettant différentes échelles de temps. L'un des deux systèmes est supposé plus rapide que l'autre. Une telle méthodologie existe pour les systèmes de dimension finie depuis de nombreuses années. Il s'agit de la méthode des perturbations singulières qui se propose de découpler le système couplé en deux sous systèmes, et de simplifier l'analyse de stabilité du système complet via l'analyse des deux sous systèmes. J'évoquerai dans un premier temps des résultats connus en dimension finie, dans un second temps quelques précédents travaux dans le cadre de la dimension infinie, et enfin, dans un troisième temps, je présenterai certains résultats concernant l'équation de Korteweg-de Vries couplée à une EDO. Ce travail a été fait en collaboration avec Eduardo Cerpa.",
+    "bio": "Chargé de recherche CNRS, LN2S, Nantes, France.",
+    "website": "https://sites.google.com/site/swamarx/home",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2023 (mois à confirmer)",
+    "title": "(Titre à confirmer)",
+    "speaker": "Ismaïla Balogoun (LN2S, Nantes, France)",
+    "abstract": "Dans cet exposé, on va parler de la stabilisation d'une classe de systèmes linéaires de dimensions infinies avec des opérateurs de contrôle non bornés et soumis à une perturbation inconnue à la frontière. On sait construit une loi de rétroaction linéaire qui rend l'origine du système en boucle fermée globalement asymptotiquement stable en l'absence de perturbation. Donc, on va proposer une loi de rétroaction du type compensateur qui va compenser l'effet de la perturbation et rendre le système en boucle fermée asymptotiquement stable en présence de la perturbation. Pour atteindre notre objectif, nous allons suivre la stratégie de mode glissant.",
+    "bio": "LN2S, Nantes, France.",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2023 (mois à confirmer)",
+    "title": "(Titre à confirmer)",
+    "speaker": "Lucie Baudouin (LAAS, équipe MAC)",
+    "abstract": "Cette présentation sera l'occasion de décrire mes travaux concernant la détermination de coefficient dans l'équation des ondes. Le but poursuivi est de proposer de nouvelles procédures de reconstruction efficaces pour des coefficients inconnus de l'équation des ondes à partir de la connaissance du flux de la solution (données aux limites de Neumann) sur une partie de la frontière du domaine. J'essaierai d'expliquer comment l'outil technique qui prouve des résultats de stabilité de ces problèmes inverses, à savoir certaines inégalités de Carleman, permet d'imaginer également un algorithme de reconstruction efficace. Je présenterai le cas de la détermination d'un potentiel indépendant du temps et celui d'une vitesse (coefficient principal) dans l'équation des ondes. Ce sont des travaux en collaboration avec Maya de Buhan (LMO, Orsay), Sylvain Ervedoza (IMB, Bordeaux) et Axel Osses (CMM, Santiago, Chili).",
+    "bio": "Directrice de recherche CNRS au LAAS, équipe MAC.",
+    "website": "https://homepages.laas.fr/lbaudoui/",
+    "slides": "",
+    "video": ""
+  }
+]

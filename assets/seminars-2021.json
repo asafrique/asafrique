@@ -1,0 +1,57 @@
+[
+  {
+    "month": "2021 (mois à confirmer)",
+    "title": "(Titre à confirmer)",
+    "speaker": "Emmanuel Zongo",
+    "abstract": "Dans cet exposé, nous montrons un résultat de stabilisation faible pour l'équation de la plaque amortie. La preuve de ce résultat est réalisée au moyen d'une estimation de Carleman pour les opérateurs elliptiques d'ordre quatre avec les conditions au bord dites de Lopatinskii-Shapiro et d'une estimation de la résolvante pour le générateur du semi-groupe de la plaque amortie associé à ces conditions aux limites. La dérivation des inégalités de Carleman passe d'abord par des estimations microlocales, puis par des estimations locales et enfin par une estimation globale.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2021 (mois à confirmer)",
+    "title": "(Titre à confirmer)",
+    "speaker": "Zodji Marcel",
+    "abstract": "On Navier-Stokes equation.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2021 (mois à confirmer)",
+    "title": "Intensification de la production de Polyhydroxyalcanoates (PHA) par voie bactérienne",
+    "speaker": "Kekeli Adote",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2021 (mois à confirmer)",
+    "title": "Provable Phase Retrieval via Mirror Descent",
+    "speaker": "Jean-Jacques Godeme",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2021 (mois à confirmer)",
+    "title": "3D Reactor Core Calculation using Spherical Harmonics and Discontinuous Galerkin Methods",
+    "speaker": "Kenneth Assogba",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "website": "https://github.com/kennethassogba",
+    "slides": "",
+    "video": ""
+  },
+  {
+    "month": "2021 (mois à confirmer)",
+    "title": "Fourier Analysis Methods for Models of Nonhomogeneous Fluids",
+    "speaker": "Jean-Paul Addogbo",
+    "abstract": "Résumé à venir.",
+    "bio": "",
+    "slides": "",
+    "video": ""
+  }
+]
