@@ -1,0 +1,41 @@
+[
+  {
+    "genre": "modele",
+    "etiquette": "Modèle d'article",
+    "titre": "Template LaTeX ASA-JVS",
+    "auteurs": "Comité éditorial ASA",
+    "date": "Version 1.0",
+    "resume": "La classe LaTeX officielle du journal : mise en page deux colonnes, couleurs ASA, encadrés « à retenir », « définition » et « le saviez-vous », lettrines et bibliographie. Cinq pages maximum par article.",
+    "liens": [
+      { "texte": "Télécharger le template (.zip)", "url": "assets/docs/ASA-JVS-Template.zip" },
+      { "texte": "Voir un article compilé (PDF)", "url": "assets/docs/ASA-JVS-exemple-article.pdf" }
+    ]
+  },
+  {
+    "genre": "cours",
+    "etiquette": "Mini-cours",
+    "titre": "Quantification : première partie",
+    "auteurs": "Mini-cours ASA",
+    "date": "",
+    "resume": "Support du mini-cours ASA sur la quantification, pensé pour des étudiantes et étudiants de master et de première année de thèse.",
+    "liens": [{ "texte": "Lire le PDF", "url": "assets/docs/mini-cours-quantification-1.pdf" }]
+  },
+  {
+    "genre": "cours",
+    "etiquette": "Mini-cours",
+    "titre": "Quantification : seconde partie",
+    "auteurs": "Mini-cours ASA",
+    "date": "",
+    "resume": "Suite du mini-cours : approfondissements et exemples travaillés.",
+    "liens": [{ "texte": "Lire le PDF", "url": "assets/docs/mini-cours-quantification-2.pdf" }]
+  },
+  {
+    "genre": "article",
+    "etiquette": "Article de vulgarisation",
+    "titre": "Numéro 1 — appel à contributions ouvert",
+    "auteurs": "Journal de vulgarisation des sciences ASA",
+    "date": "À paraître",
+    "resume": "Le premier numéro se prépare. Nous cherchons des articles de cinq pages maximum, écrits pour un lectorat non spécialiste : une idée de recherche, une méthode, un métier scientifique, un objet du quotidien expliqué.",
+    "liens": [{ "texte": "Proposer un article", "url": "mailto:contact@asafrique.org?subject=Proposition%20d%27article%20JVS" }]
+  }
+]

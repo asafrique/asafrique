@@ -1,0 +1,53 @@
+[
+  {
+    "date": "2022-09-11",
+    "dateLabel": "11 septembre 2022",
+    "title": "Stabilization of the damped plate equation under general boundary conditions",
+    "speaker": "Emmanuel Zongo",
+    "affiliation": "Travail conjoint avec Jérôme Le Rousseau",
+    "abstract": "Dans cet exposé, nous montrons un résultat de stabilisation faible pour l'équation de la plaque amortie. La preuve repose sur une estimation de Carleman pour les opérateurs elliptiques d'ordre quatre avec des conditions au bord de Lopatinskii–Shapiro, et sur une estimation de la résolvante du générateur du semi-groupe associé. La dérivation des inégalités de Carleman passe d'abord par des estimations microlocales, puis locales, et enfin par une estimation globale.",
+    "video": "https://zoom.us/rec/share/yQQP9KQ3vNrQvr-NTokZGfqQSEfZGb5ZyU7g4R0M7hVSHQYG_cviiXI9WMi7Z7qN.9XYk_1FooI_A68wA"
+  },
+  {
+    "date": "2022-10-09",
+    "dateLabel": "9 octobre 2022",
+    "title": "Algorithme de reconstruction de paramètre dans l'équation des ondes",
+    "speaker": "Lucie Baudouin",
+    "affiliation": "Directrice de recherche CNRS, LAAS, équipe MAC",
+    "abstract": "Cette présentation décrit des travaux sur la détermination de coefficients dans l'équation des ondes. Le but est de proposer de nouvelles procédures de reconstruction efficaces pour des coefficients inconnus à partir de la connaissance du flux de la solution (données de Neumann) sur une partie de la frontière du domaine. L'outil technique qui prouve la stabilité de ces problèmes inverses — certaines inégalités de Carleman — permet également d'imaginer un algorithme de reconstruction efficace. Les cas d'un potentiel indépendant du temps et d'une vitesse (coefficient principal) seront présentés. Travaux en collaboration avec Maya de Buhan (LMO, Orsay), Sylvain Ervedoza (IMB, Bordeaux) et Axel Osses (CMM, Santiago, Chili).",
+    "bio": "Directrice de recherche CNRS au LAAS, équipe MAC.",
+    "website": "https://homepages.laas.fr/lbaudoui/",
+    "video": "https://zoom.us/rec/share/rRoH3KmJaC2L9e6J2nEDih_K92l9bz4sK2iVMbcyoWACfwDudXmkMcsOdghmMq89.Q2oRnmBQbYQLD_Sk"
+  },
+  {
+    "dateLabel": "Novembre 2022 — jour à confirmer",
+    "title": "Contrôle par mode glissant pour une classe de systèmes linéaires de dimension infinie",
+    "speaker": "Ismaïla Balogoun",
+    "affiliation": "LS2N, Nantes, France",
+    "abstract": "Dans cet exposé, on parle de la stabilisation d'une classe de systèmes linéaires de dimension infinie avec des opérateurs de contrôle non bornés, soumis à une perturbation inconnue à la frontière. On sait construire une loi de rétroaction linéaire qui rend l'origine du système en boucle fermée globalement asymptotiquement stable en l'absence de perturbation. On propose ici une loi de rétroaction de type compensateur qui compense l'effet de la perturbation et rend le système en boucle fermée asymptotiquement stable en sa présence. Pour atteindre cet objectif, nous suivons la stratégie du mode glissant.",
+    "bio": "LS2N, Nantes, France.",
+    "video": "https://zoom.us/rec/share/wljCYWDtdhBTTO5IXIw6RdD8Cvpky0GmMvsiEJl0TuwlpejMNOuGDEi6gY7uHX7U.cU7OFVZzzwAaSv2S"
+  },
+  {
+    "date": "2022-12-04",
+    "dateLabel": "4 décembre 2022",
+    "title": "Stabilité exponentielle d'une équation de Korteweg–de Vries couplée à une EDO avec différentes échelles de temps",
+    "speaker": "Swann Marx",
+    "affiliation": "Chargé de recherche CNRS, LS2N, Nantes, France",
+    "abstract": "Dans cet exposé, j'expliquerai comment analyser la stabilité asymptotique de systèmes couplés admettant différentes échelles de temps, l'un des deux systèmes étant supposé plus rapide que l'autre. Une telle méthodologie existe en dimension finie depuis de nombreuses années : la méthode des perturbations singulières, qui découple le système en deux sous-systèmes et simplifie l'analyse de stabilité du système complet. J'évoquerai des résultats connus en dimension finie, puis quelques travaux en dimension infinie, et enfin des résultats concernant l'équation de Korteweg–de Vries couplée à une EDO. Travail réalisé en collaboration avec Eduardo Cerpa.",
+    "bio": "Chargé de recherche CNRS, LS2N, Nantes, France.",
+    "website": "https://sites.google.com/site/swamarx/home",
+    "video": "https://zoom.us/rec/share/MAHu8EBM2cFdR4u4pEGnUowZIyO97iKdZ95QrfrdRb2NdojklrVeCeakO5w8d8MA.X48WZ_LnpnfyjLe5"
+  },
+  {
+    "date": "2022-12-11",
+    "dateLabel": "11 décembre 2022",
+    "title": "Mathematical analysis of the impact of media coverage in mitigating the outbreak of COVID-19",
+    "speaker": "Ousmane Koutou",
+    "affiliation": "Département de mathématiques, Université Joseph Ki-Zerbo, Ouagadougou",
+    "abstract": "In this talk, I present a mathematical model with a standard incidence rate to assess the role of media such as Facebook, television, radio and Twitter in mitigating the outbreak of COVID-19. The basic reproduction number R0, the threshold parameter between disappearance and persistence of the disease, is computed and varies directly with the number of hospitalized people, asymptomatic and symptomatic carriers, and the impact of media coverage. Local and global stability are investigated using the Routh–Hurwitz criterion and Lyapunov's functional technique. A local sensitivity analysis assesses the impact of each model parameter on R0. The approximate rate at which herd immunity occurs under control measures is also computed, and numerical simulations based on available data corroborate the theoretical findings.",
+    "bio": "Département de mathématiques, Université Joseph Ki-Zerbo, Ouagadougou.",
+    "slides": "assets/slides/2022-12-11-koutou-slides.pdf",
+    "video": "https://zoom.us/rec/share/8KBaEht7G5drpXwR7vr6O808FaFDvoqK71VqdDoZ1laJQGqx15jmmSaLkXVWJPOv.ycbzcrV58LtZ1WQQ"
+  }
+]

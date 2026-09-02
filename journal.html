@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journal de vulgarisation — ASA, Association Sciences pour l’Afrique</title>
+<meta name="description" content="Le journal de vulgarisation des sciences d’ASA : bibliothèque, mini-cours, modèle LaTeX et appel à contributions.">
+<meta name="theme-color" content="#0E1B2A">
+<link rel="canonical" href="https://asafrique.org/journal.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Journal de vulgarisation — ASA">
+<meta property="og:description" content="Le journal de vulgarisation des sciences d’ASA : bibliothèque, mini-cours, modèle LaTeX et appel à contributions.">
+<meta property="og:url" content="https://asafrique.org/journal.html">
+<meta property="og:image" content="https://asafrique.org/assets/img/asa-logo.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/asa-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="entete">
+  <div class="wrap entete-int">
+    <a class="marque" href="index.html">
+      <img src="assets/img/asa-logo.png" alt="">
+      <span><b>ASA</b><span>Sciences pour l’Afrique</span></span>
+    </a>
+    <button class="burger" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu">☰</button>
+    <nav class="menu" id="menu-principal" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="activites.html">Activités</a>
+      <a href="journal.html" aria-current="page">Journal</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="adhesion.html">Adhérer</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+
+<section class="bloc bandeau-journal">
+  <div class="wrap">
+    <div class="intro-bloc">
+      <h1>Journal de vulgarisation des sciences</h1>
+      <p>La revue d’ASA : cinq pages maximum, écrites pour quelqu’un qui n’est pas du métier. Une idée de recherche, une méthode, un objet du quotidien — expliqués sans jargon, avec une figure et un exemple.</p>
+    </div>
+    <div class="meta-revue">
+      <div><b>5 pages</b>format maximum</div>
+      <div><b>Français ou anglais</b>langues acceptées</div>
+      <div><b>LaTeX</b>modèle fourni</div>
+      <div><b>Ouvert</b>appel à contributions</div>
+    </div>
+  </div>
+</section>
+
+<section class="bloc">
+  <div class="wrap">
+    <h2 id="bibliotheque">La bibliothèque</h2>
+    <p>Articles publiés, mini-cours et outils de rédaction, réunis au même endroit.</p>
+    <div class="filtres" id="filtres" style="margin-top:var(--pas-3)">
+      <button type="button" data-genre="tout" aria-pressed="true">Tout</button>
+      <button type="button" data-genre="article" aria-pressed="false">Articles</button>
+      <button type="button" data-genre="cours" aria-pressed="false">Mini-cours</button>
+      <button type="button" data-genre="modele" aria-pressed="false">Modèles</button>
+    </div>
+    <div class="catalogue" id="catalogue">Chargement du catalogue…</div>
+  </div>
+</section>
+
+<section class="bloc" id="publier" style="background:var(--ivoire-2)">
+  <div class="wrap">
+    <div class="encadre">
+      <div>
+        <h2>Écrire pour le journal</h2>
+        <p>Vous travaillez sur un sujet que personne n’arrive à vous faire expliquer en dîner de famille ? C’est exactement l’article que nous cherchons. Le comité éditorial relit, commente et accompagne jusqu’à la publication.</p>
+        <div class="hero-actions">
+          <a class="btn btn-or" href="assets/docs/ASA-JVS-Template.zip">Télécharger le modèle LaTeX</a>
+          <a class="btn btn-ligne" href="mailto:contact@asafrique.org?subject=Proposition%20d%27article%20JVS">Envoyer une proposition</a>
+        </div>
+      </div>
+      <ol>
+        <li>Choisissez un sujet et écrivez-en le résumé en cinq lignes.</li>
+        <li>Envoyez-le nous : nous répondons avec un avis et un calendrier.</li>
+        <li>Rédigez avec la classe <code>asa-jvs</code> : encadrés, lettrines et figures sont prévus.</li>
+        <li>Deux relectures, une mise en page, publication dans le numéro.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="bloc" id="mini-cours">
+  <div class="wrap">
+    <div class="intro-bloc">
+      <h2>Mini-cours</h2>
+      <p>Plus techniques que les articles, plus courts qu’un cours de master : les mini-cours ASA traitent un thème en deux ou trois séances, supports téléchargeables.</p>
+    </div>
+    <div class="grille-3" style="margin-top:var(--pas-3)">
+      <a class="carte" href="assets/docs/mini-cours-quantification-1.pdf" target="_blank" rel="noopener">
+        <h3>Quantification — partie 1</h3>
+        <p>Introduction et premiers outils.</p>
+        <span class="suite">Ouvrir le PDF</span>
+      </a>
+      <a class="carte" href="assets/docs/mini-cours-quantification-2.pdf" target="_blank" rel="noopener">
+        <h3>Quantification — partie 2</h3>
+        <p>Approfondissements et exemples travaillés.</p>
+        <span class="suite">Ouvrir le PDF</span>
+      </a>
+      <a class="carte" href="https://forms.gle/T9jEudFH7i3tUBnf6" target="_blank" rel="noopener">
+        <h3>Proposer un mini-cours</h3>
+        <p>Vous maîtrisez un sujet et voulez le transmettre ? Décrivez-le nous avec le formulaire du séminaire.</p>
+        <span class="suite">Remplir le formulaire</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="bloc suivant">
+  <div class="wrap">
+    <h2>Continuer</h2>
+    <div class="suivant-grille"><a href="seminaires.html"><b>ASA Séminaire</b><span>Les séances mois par mois, depuis 2021</span></a><a href="adhesion.html"><b>Adhérer</b><span>Participer au comité éditorial</span></a><a href="contact.html"><b>Nous écrire</b><span>Questions éditoriales et partenariats</span></a></div>
+  </div>
+</section>
+
+</main>
+<footer class="pied">
+  <div class="wrap">
+    <div class="pied-grille">
+      <div>
+        <a class="marque" href="index.html">
+          <img src="assets/img/asa-logo.png" alt="">
+          <span><b>ASA</b><span>Sciences pour l’Afrique</span></span>
+        </a>
+        <p class="baseline">Association loi 1901, apolitique et à but non lucratif, qui contribue à la promotion et au développement des sciences en Afrique.</p>
+      </div>
+      <div>
+        <h4>Activités</h4>
+        <ul>
+          <li><a href="seminaires.html">ASA Séminaire</a></li>
+          <li><a href="journal.html">Journal de vulgarisation</a></li>
+          <li><a href="journal.html#mini-cours">Mini-cours</a></li>
+          <li><a href="activites.html#soutiens">Soutiens</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Participer</h4>
+        <ul>
+          <li><a href="adhesion.html">Adhérer</a></li>
+          <li><a href="https://forms.gle/T9jEudFH7i3tUBnf6" target="_blank" rel="noopener">Proposer un exposé</a></li>
+          <li><a href="journal.html#publier">Publier un article</a></li>
+          <li><a href="contact.html">Nous écrire</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Suivre</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/company/association-sciences-pour-l-afrique/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/sci4africa/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61581832300614" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://chat.whatsapp.com/Fy2bQDI7ddjBXvCgywHk6Q" target="_blank" rel="noopener">Groupe WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pied-bas">
+      <span>© <span id="annee">2026</span> Association Sciences pour l’Afrique — RNA W941020769</span>
+      <span><a href="mailto:contact@asafrique.org">contact@asafrique.org</a></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

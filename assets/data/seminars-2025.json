@@ -1,0 +1,53 @@
+[
+  {
+    "date": "2025-01-12",
+    "dateLabel": "12 janvier 2025",
+    "title": "Quantum error correction codes and decoders",
+    "speaker": "Aulan Lucrèce Zahoundo",
+    "affiliation": "Doctorante, AIMS Ghana, Accra",
+    "abstract": "We believe that the next revolution is quantum, involving the use of exponentially powerful computers called quantum computers. In these early days of such a revolution, quantum computers face crucial challenges, among which handling noise. To overcome this challenge, scientists are developing algorithms either to make the computers fault-tolerant or to correct where noise corrupts the information. In this talk, we introduce some of the quantum error correction codes and how they work.",
+    "bio": "Doctorante à AIMS Ghana.",
+    "doc": "assets/docs/2025-01-12-zahoundo-annonce.pdf"
+  },
+  {
+    "date": "2025-07-13",
+    "dateLabel": "13 juillet 2025",
+    "title": "Stabilisation d'une classe de systèmes discrets à retard",
+    "speaker": "Ikram El Haskouki",
+    "affiliation": "ENS Casablanca, Maroc",
+    "poster": "assets/posters/2025-07-13-el-haskouki.jpg",
+    "slides": "assets/slides/2025-07-13-el-haskouki-slides.pdf",
+    "abstract": ""
+  },
+  {
+    "date": "2025-10-12",
+    "dateLabel": "12 octobre 2025",
+    "title": "Optimal control problem with state constraints for cancer chemotherapy and treatment optimization",
+    "speaker": "David Lassounon",
+    "affiliation": "INSA Rennes, France",
+    "abstract": "Problème de contrôle optimal avec contraintes d'état appliqué à la chimiothérapie et à l'optimisation de traitement.",
+    "bio": "Enseignant-chercheur à l'INSA Rennes.",
+    "poster": "assets/posters/2025-10-12-lassounon.jpg",
+    "slides": "assets/slides/2025-10-12-lassounon-slides.pdf"
+  },
+  {
+    "date": "2025-11-09",
+    "dateLabel": "9 novembre 2025",
+    "title": "The influence of active boundary control and lower-order passive distributed dampers on the stability of serially connected elastic and piezoelectric smart sensor designs",
+    "speaker": "Mohammad Akil",
+    "affiliation": "Maître de conférences, UPHF Valenciennes, France",
+    "website": "https://sites.google.com/view/mohammad-akil/home",
+    "poster": "assets/posters/2025-11-09-akil.jpg",
+    "abstract": ""
+  },
+  {
+    "date": "2025-12-14",
+    "dateLabel": "14 décembre 2025",
+    "title": "Multiagent reinforcement learning for traffic signal control",
+    "speaker": "Mohammed Safwen Markou",
+    "affiliation": "Tunis, Tunisie",
+    "abstract": "Approches d'apprentissage par renforcement multi-agents pour l'optimisation coordonnée des feux de signalisation.",
+    "poster": "assets/posters/2025-12-14-markou.jpg",
+    "slides": "assets/slides/2025-12-14-markou-slides.pdf"
+  }
+]

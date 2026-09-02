@@ -1,0 +1,34 @@
+[
+  {
+    "dateLabel": "Février 2023 — jour à confirmer",
+    "title": "Ensemble-contrôlabilité des systèmes linéaires",
+    "speaker": "Baparou Danhane",
+    "affiliation": "Enseignant-chercheur",
+    "abstract": "Ce séminaire porte sur la notion d'ensemble-contrôlabilité dans le cadre des systèmes linéaires. La modélisation de systèmes physiques fait apparaître dans leur dynamique des paramètres qui leur sont inhérents et que l'on ne connaît pas précisément — la dynamique d'une voiture dépend par exemple de sa masse, qui varie avec les charges transportées. L'ensemble-contrôlabilité étudie sous quelles conditions il est possible de contrôler l'état ou une sortie du système avec des contrôles indépendants du paramètre. Dans cette présentation, seules les conditions d'existence de contrôles en boucle ouverte sont évoquées.",
+    "video": "https://zoom.us/rec/share/PYOimE6OCe1HoT1cr67969coCVBs1VQEw47I3rRJQxSJY35efsNXT73syvmlThwX.Pu0JrR3-_7XrVTtb"
+  },
+  {
+    "dateLabel": "2023 — date à confirmer",
+    "title": "Contrôle des équations piézoélectriques par estimation a priori",
+    "speaker": "Romziath Bidouan",
+    "abstract": "In this presentation, we study the problem of control of piezoelectric equations in a domain Ω. We use the electromagnetic wave to control the deformation of piezoelectric bodies through the current density j on the boundary Γ, the current density J in Ω, the electric charge density q in Ω, and h the surface force on ΓN. To construct those control laws, we use the a priori estimation technique."
+  },
+  {
+    "dateLabel": "2023 — date à confirmer",
+    "title": "Facteurs prédictifs du sevrage tabagique chez les fumeurs atteints de maladies cardio-vasculaires (STABA-CV)",
+    "speaker": "Ingrid Allagbé",
+    "affiliation": "Hôpital Georges-Pompidou, Paris — service d'addictologie, associée à l'Université de Dijon",
+    "abstract": "Contexte : le tabagisme représente un facteur de risque majeur et modifiable de maladies cardio-vasculaires (MCV), en particulier chez les femmes. En France, la prévalence du tabac est parmi les plus élevées d'Europe. Cependant, l'identification des facteurs associés au sevrage tabagique dans les populations à haut risque cardio-vasculaire reste peu étudiée. L'objectif de ce travail de thèse est d'abord de dresser l'état des connaissances sur l'association entre consommation de tabac et risque de MCV chez les femmes à travers une revue de littérature ; puis, à l'aide de la base nationale informatisée des consultations de tabacologie CDT-net, de décrire le profil sociodémographique, médical et tabacologique des consultants et de rechercher les facteurs prédictifs de sevrage tabagique et leurs disparités selon le sexe.\n\nMots-clés : risque cardiovasculaire, consultations de tabacologie, sevrage tabagique, femmes, traitement de substitution nicotinique, varénicline.",
+    "bio": "Chercheuse à l'Hôpital Georges-Pompidou de Paris, service d'addictologie, associée à l'Université de Dijon.",
+    "video": "https://zoom.us/rec/share/PYOimE6OCe1HoT1cr67969coCVBs1VQEw47I3rRJQxSJY35efsNXT73syvmlThwX.Pu0JrR3-_7XrVTtb"
+  },
+  {
+    "date": "2023-11-12",
+    "dateLabel": "12 novembre 2023",
+    "title": "Compressible viscous fluid model: the effective flux in the constant to density-dependent viscosity case",
+    "speaker": "Marcel Zodji",
+    "affiliation": "Doctorant",
+    "poster": "assets/posters/2023-11-12-zodji-compressible-fluid.jpg",
+    "abstract": ""
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "date": "2026-01-11",
+    "dateLabel": "11 janvier 2026",
+    "title": "Existence of solutions for the nonlocal problem involving the nonlocal (N, N/s)-Laplacian and nonlocal p(x)-Laplacian with logarithmic and critical exponential nonlinearities",
+    "speaker": "Oumarou Asso",
+    "affiliation": "IMSP, Porto-Novo, Bénin",
+    "slides": "assets/slides/2026-01-11-asso-slides.pdf",
+    "abstract": ""
+  },
+  {
+    "date": "2026-02-07",
+    "dateLabel": "7 février 2026",
+    "title": "Fractional optimal control for epidemiological co-infection modelling : application à la co-infection tuberculose bovine (bTB) – rage",
+    "speaker": "Boubacar Diallo",
+    "affiliation": "PAUSTI, Bamako, Mali",
+    "poster": "assets/posters/2026-02-07-diallo.jpg",
+    "slides": "assets/slides/2026-02-07-diallo-slides.pdf",
+    "abstract": ""
+  },
+  {
+    "date": "2026-03-08",
+    "dateLabel": "8 mars 2026",
+    "title": "Steering control for control-affine systems via nonlinear controllability Gramian",
+    "speaker": "Cyprien Tamekue",
+    "affiliation": "Postdoctoral Research Associate, Washington University in St. Louis, USA",
+    "bio": "Postdoctoral Research Associate en théorie du contrôle et neurosciences mathématiques à Washington University in St. Louis (McKelvey School of Engineering), au sein du Brain Dynamics and Control Research Group.",
+    "website": "https://www.ctamekue.com/",
+    "poster": "assets/posters/2026-03-08-tamekue.jpg",
+    "slides": "assets/slides/2026-03-08-tamekue-slides.pdf",
+    "abstract": ""
+  },
+  {
+    "date": "2026-04-12",
+    "dateLabel": "12 avril 2026",
+    "title": "From biological questions to mathematical models",
+    "speaker": "Clotilde Djuikem",
+    "affiliation": "University of Manitoba, Canada",
+    "bio": "Postdoctoral Research Fellow à l'Université du Manitoba ; travaux en épidémiologie mathématique et sur l'impact du changement climatique sur les poissons arctiques.",
+    "website": "https://scholar.google.com/citations?hl=en&user=i2_8ZtsAAAAJ",
+    "poster": "assets/posters/2026-04-12-djuikem-biological-questions.jpg",
+    "abstract": ""
+  },
+  {
+    "date": "2026-05-17",
+    "dateLabel": "17 mai 2026",
+    "title": "Causal inference over time: developing methods for longitudinal data with applications in health research",
+    "speaker": "Nyamador Komla David Adenyo",
+    "affiliation": "CHU de Québec – Université Laval, Canada",
+    "poster": "assets/posters/2026-05-17-adenyo.jpg",
+    "slides": "assets/slides/2026-05-17-adenyo-slides.pdf",
+    "abstract": ""
+  },
+  {
+    "date": "2026-06-21",
+    "dateLabel": "21 juin 2026",
+    "title": "Prise en compte de la consommation énergétique dans l'équilibrage de lignes d'assemblage",
+    "speaker": "Arnauld Tuyaba",
+    "affiliation": "Ingénieur recherche opérationnelle chez Air France, Paris, France",
+    "poster": "assets/posters/2026-06-21-tuyaba.jpg",
+    "abstract": ""
+  },
+  {
+    "dateLabel": "Prochainement — date à confirmer",
+    "title": "Séance à venir",
+    "speaker": "Nana Téwendé Emmanuel",
+    "affiliation": "Université Nazi Boni, Burkina Faso",
+    "upcoming": true,
+    "abstract": ""
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "date": "2024-01-14",
+    "dateLabel": "14 janvier 2024",
+    "title": "Stabilité et contrôle d'équations aux différences",
+    "speaker": "Guilherme Mazanti",
+    "affiliation": "Inria & L2S, CentraleSupélec, France",
+    "website": "https://pages.saclay.inria.fr/guilherme.mazanti/",
+    "poster": "assets/posters/2024-01-14-mazanti.jpg",
+    "abstract": ""
+  },
+  {
+    "date": "2024-02-11",
+    "dateLabel": "11 février 2024",
+    "title": "Contrôle saturé pour certaines EDP : théorie et applications",
+    "speaker": "Christophe Prieur",
+    "affiliation": "Directeur de recherche CNRS, GIPSA-lab, CNRS / Université Grenoble Alpes",
+    "abstract": "Dans cette présentation, l'accent est mis sur la stabilité des équations aux dérivées partielles avec des contrôles limités en amplitude (comme ceux obtenus via une saturation). Nous étudions différentes classes d'équations — réaction-diffusion, ondes, Korteweg-de Vries — essentiellement avec des contrôles frontière. Nous passons en revue certaines techniques pour l'analyse de la stabilité et le calcul de contrôles frontière pour de telles EDP paraboliques ou hyperboliques. Une application dans le domaine de la fusion nucléaire conclut l'exposé.",
+    "bio": "Christophe Prieur est directeur de recherche CNRS au laboratoire Grenoble Image, Parole, Signal, Automatique (GIPSA-lab). Ses travaux sur les systèmes dynamiques ont débouché sur des applications en navigation et suivi d'objets, dynamique des fluides et contrôle de la fusion nucléaire. Ses recherches les plus récentes portent sur les systèmes hybrides, le contrôle des équations aux dérivées partielles et les systèmes de commande non linéaires. Pour ses contributions, il a été nommé Fellow de l'IEEE.",
+    "website": "https://www.gipsa-lab.grenoble-inp.fr/~christophe.prieur/",
+    "poster": "assets/posters/2024-02-11-prieur.jpg",
+    "slides": "assets/slides/2024-02-11-prieur-slides.pdf"
+  },
+  {
+    "date": "2024-03-10",
+    "dateLabel": "10 mars 2024",
+    "title": "Problèmes elliptiques impliquant l'opérateur p-laplacien fractionnaire en présence d'un potentiel à signe indéfini",
+    "speaker": "Oumarou Asso",
+    "affiliation": "IMSP, Porto-Novo, Bénin",
+    "poster": "assets/posters/2024-03-10-asso.jpg",
+    "abstract": ""
+  },
+  {
+    "date": "2024-04-14",
+    "dateLabel": "14 avril 2024",
+    "title": "Output regulation for nonlinear systems and PDE with some examples",
+    "speaker": "Daniele Astolfi",
+    "affiliation": "Chargé de recherche CNRS, LAGEPP, Lyon, France",
+    "abstract": "The internal model principle for the linear robust output regulation problem was established in the 1970s. It states that, in order to perfectly track or reject disturbances robustly with respect to small model uncertainties, the controller needs to incorporate a copy of the model generating such signals. A typical well-known case is the use of integral action (e.g. PID regulators) to track or reject constant signals. In this talk, we revisit the general linear case, providing the main ideas and tools to design internal-model-based regulators. Then, some extensions are illustrated for nonlinear and PDE systems. Finally, engineering examples are shown, with particular relevance to harmonic regulation for the mechanical ventilation problem.",
+    "bio": "Daniele Astolfi a obtenu une thèse conjointe en théorie du contrôle entre l'Université de Bologne et Mines ParisTech en 2016. Après un poste d'assistant de recherche à l'Université de Lorraine (CRAN), il est chercheur CNRS au LAGEPP, Lyon, depuis 2018. Ses recherches portent sur la synthèse d'observateurs, la stabilisation par retour et la régulation de sortie pour les systèmes non linéaires, les systèmes en réseau, hybrides et multi-agents. Il est éditeur associé d'Automatica depuis 2018 et de l'European Journal of Control depuis 2023.",
+    "website": "https://sites.google.com/site/astolfidaniele/home",
+    "poster": "assets/posters/2024-04-14-astolfi.jpg"
+  },
+  {
+    "date": "2024-05-12",
+    "dateLabel": "12 mai 2024",
+    "title": "Interacting particle algorithms for a linear filtering problem with Poisson-distributed observations",
+    "speaker": "Olga Yufereva",
+    "poster": "assets/posters/2024-05-12-yufereva.jpg",
+    "abstract": ""
+  },
+  {
+    "date": "2024-06-09",
+    "dateLabel": "9 juin 2024",
+    "title": "Stabilization of a sterile insect technique model by feedback laws",
+    "speaker": "Didi Kala Agbo Bidi",
+    "affiliation": "Doctorant, LJLL, Sorbonne Université, Paris — encadré par Jean-Michel Coron et Luis Almeida",
+    "abstract": "The sterile insect technique (SIT) is one of the most ecological methods for controlling insect pests responsible for worldwide crop destruction and disease transmission. It consists in releasing sterile males into the pest population in order to reduce fertility and, after a few generations, the target population. Classical SIT has been modelled and studied theoretically in many papers; this talk focuses on the stabilization of such a model by feedback laws.",
+    "bio": "Doctorant au Laboratoire Jacques-Louis Lions (LJLL), Sorbonne Université.",
+    "doc": "assets/docs/2024-06-09-agbo-abstract.pdf"
+  },
+  {
+    "date": "2024-07-14",
+    "dateLabel": "14 juillet 2024",
+    "title": "Safe and guaranteed learning-based control of cyber-physical systems",
+    "speaker": "Adnane Saoud",
+    "affiliation": "Assistant Professor, University Mohammed VI Polytechnic (UM6P), Benguerir, Maroc",
+    "abstract": "In recent years, learning-based methods have demonstrated significant success in controlling complex cyber-physical systems (CPS). These techniques use learning-based tools either to derive mathematical models of a system for synthesizing controllers, or to directly learn the controller itself. However, applying learning-based methods in safety-critical CPS poses challenges, as these components are often regarded as black-box systems without formal guarantees. This presentation addresses how safety and performance guarantees can be recovered in that setting.",
+    "bio": "Assistant Professor à l'Université Mohammed VI Polytechnique (UM6P), Benguerir, Maroc.",
+    "doc": "assets/docs/2024-07-14-saoud-annonce.pdf"
+  },
+  {
+    "date": "2024-11-12",
+    "dateLabel": "12 novembre 2024",
+    "title": "Quantum computing and quantum machine learning",
+    "speaker": "Aulan Lucrèce Zahoundo",
+    "affiliation": "Doctorante, AIMS Ghana, Accra",
+    "poster": "assets/posters/2024-11-12-zahoundo.jpg",
+    "abstract": ""
+  },
+  {
+    "date": "2024-11-12",
+    "dateLabel": "12 novembre 2024",
+    "title": "Existence et régularité de flot de courbure moyenne non locale des graphes",
+    "speaker": "Joel Anoumou Attiogbé",
+    "abstract": "Dans cet exposé, nous considérons le problème géométrique des graphes entiers en mouvement par courbure moyenne fractionnaire. Pour cela, nous étudions l'équation d'évolution quasi linéaire non locale associée, satisfaite par la famille des fonctions décrivant les graphes. Nous obtenons, en utilisant une approche par semi-groupes analytiques, l'existence en temps petits, l'unicité et la régularité optimale Hölder en temps et en espace de solutions classiques de l'équation non locale, dépendant de la régularité du graphe initial. La méthode permet également d'obtenir des estimations de régularité C∞ des graphes évolutifs pour des temps positifs. Ces résultats ont été obtenus dans un travail conjoint avec M. M. Fall et T. Weth.",
+    "poster": "assets/posters/2024-11-12-anoumou.jpg",
+    "video": "https://zoom.us/rec/share/RZV9FWQCz-Dz5igC7cPbsN76ZMNfxpjRcPNSPS6MuVr_abQOBCoKXngIBbJoVMA.cAHqATko9Iyf0sVz"
+  },
+  {
+    "dateLabel": "2024 — date à confirmer",
+    "title": "Multi-seasonal modelling and biological control of coffee leaf rust",
+    "speaker": "Clotilde Djuikem",
+    "affiliation": "University of Manitoba, Canada",
+    "abstract": "Fungal diseases cause serious damage to crops worldwide. In particular, coffee leaf rust (CLR), caused by the fungus Hemileia vastatrix, attacks coffee leaves and reduces coffee yield. This paper presents a multi-seasonal model of CLR development in a coffee plantation, with continuous dynamics during the rainy season and a discrete event representing the simpler dynamics of the dry season. Biological control using hyperparasites, through one or more discrete introduction events over the year, is then added. Analytical and semi-numerical studies identify how much and how frequently hyperparasites need to be introduced, through the definition of a threshold value depending on various parameters. We show that the best control strategy depends on hyperparasite mortality: low-mortality parasites need be released only once a year, while high-mortality parasites should be released more frequently to ensure their persistence in the plantation. This work provides qualitative and quantitative bases for the deployment of hyperparasite-based biocontrol, a promising alternative to fungicides for rust control.",
+    "video": "https://zoom.us/rec/share/YZpfDUaDZqA1P7q-hRRC4rH0AfCpVJVzqENjIXlkdoqkzYDG8pG5ei03Yb71itGL.uCzIXQZTg34DcB78"
+  }
+]
