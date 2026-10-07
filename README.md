@@ -70,3 +70,21 @@ ce qui exige un serveur HTTP.
 
 GitHub Pages, branche `main`, dossier racine. Le fichier `CNAME` fixe le domaine personnalisé.
 Toute modification poussée sur `main` est en ligne en une à deux minutes.
+
+## Mettre à jour les supports
+
+Le fichier `assets/data/journal.json` est la source unique des mini-cours :
+le catalogue du journal, la section Mini-cours et l’aperçu de la page Activités
+se mettent automatiquement à jour depuis ce fichier. Pour ajouter ou modifier
+un cours, modifier son entrée de genre `cours` (titre, auteurs, date, résumé,
+liens), puis déposer le PDF à l’emplacement indiqué dans `liens[].url`.
+Aucune modification HTML n’est nécessaire.
+
+Pour remplacer les diapositives de Cyprien Tamekue, remplacer uniquement
+`assets/slides/2026-03-08-tamekue-slides.pdf`. Les deux versions de la page
+Séminaires pointent déjà vers ce même fichier.
+
+Les fichiers `assets/seminars-*.json` et `assets/app.js` servent encore aux
+anciennes pages anglaises ; les pages françaises utilisent
+`assets/data/seminars-*.json` et `assets/js/app.js`. Cette mise à jour ne
+fusionne pas ces anciennes données de séminaires.

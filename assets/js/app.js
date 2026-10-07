@@ -27,8 +27,10 @@
     }).join("");
   };
 
+  var chargements = {};
   var charger = function (url) {
-    return fetch(url, { cache: "no-cache" }).then(function (r) {
+    if (chargements[url]) return chargements[url];
+    return chargements[url] = fetch(url, { cache: "no-cache" }).then(function (r) {
       if (!r.ok) throw new Error(r.status);
       return r.json();
     });
@@ -121,6 +123,31 @@
     var demande = (location.hash.match(/^#y(\d{4})$/) || [])[1];
     var cible = demande && rail.querySelector('[data-annee="' + demande + '"]');
     (cible || rail.querySelector('[data-defaut="1"]') || boutons[0]).click();
+  }
+
+  /* Le catalogue est la source unique des cours sur toutes les pages. */
+  var supports = document.getElementById("supports-mini-cours");
+  var apercu = document.getElementById("apercu-mini-cours");
+  if (supports || apercu) {
+    charger("assets/data/journal.json").then(function (d) {
+      var cours = d.filter(function (a) { return a.genre === "cours"; });
+      if (supports) {
+        supports.innerHTML = cours.length ? cours.map(function (a) {
+          var lien = (a.liens || [])[0];
+          if (!lien) return "";
+          return '<a class="carte" href="' + echapper(lien.url) + '" target="_blank" rel="noopener">' +
+            "<h3>" + echapper(a.titre) + "</h3><p>" + echapper(a.auteurs) +
+            " — " + echapper(a.resume) + '</p><span class="suite">' +
+            echapper(lien.texte) + "</span></a>";
+        }).join("") : "<p>Aucun support disponible pour le moment.</p>";
+      }
+      if (apercu) apercu.textContent = cours.length ?
+        "Supports disponibles : " + cours.map(function (a) { return a.titre; }).join(" ; ") + "." :
+        "Les prochains supports seront annoncés ici.";
+    }).catch(function () {
+      if (supports) supports.textContent = "Supports indisponibles. Rechargez la page.";
+      if (apercu) apercu.textContent = "Consultez les supports dans la rubrique Mini-cours.";
+    });
   }
 
   /* ---------------------------------------------------------- journal */
