@@ -27,10 +27,8 @@
     }).join("");
   };
 
-  var chargements = {};
   var charger = function (url) {
-    if (chargements[url]) return chargements[url];
-    return chargements[url] = fetch(url, { cache: "no-cache" }).then(function (r) {
+    return fetch(url, { cache: "no-cache" }).then(function (r) {
       if (!r.ok) throw new Error(r.status);
       return r.json();
     });
@@ -125,29 +123,30 @@
     (cible || rail.querySelector('[data-defaut="1"]') || boutons[0]).click();
   }
 
-  /* Le catalogue est la source unique des cours sur toutes les pages. */
-  var supports = document.getElementById("supports-mini-cours");
-  var apercu = document.getElementById("apercu-mini-cours");
-  if (supports || apercu) {
+  /* Supports : mêmes cartes et styles, données partagées avec le catalogue. */
+  var supportCours = document.querySelector("[data-support-cours]");
+  var apercuCours = document.getElementById("apercu-mini-cours");
+  if (supportCours || apercuCours) {
     charger("assets/data/journal.json").then(function (d) {
       var cours = d.filter(function (a) { return a.genre === "cours"; });
-      if (supports) {
-        supports.innerHTML = cours.length ? cours.map(function (a) {
+      if (supportCours) {
+        cours.forEach(function (a) {
           var lien = (a.liens || [])[0];
-          if (!lien) return "";
-          return '<a class="carte" href="' + echapper(lien.url) + '" target="_blank" rel="noopener">' +
-            "<h3>" + echapper(a.titre) + "</h3><p>" + echapper(a.auteurs) +
-            " — " + echapper(a.resume) + '</p><span class="suite">' +
-            echapper(lien.texte) + "</span></a>";
-        }).join("") : "<p>Aucun support disponible pour le moment.</p>";
+          if (!lien) return;
+          var carte = supportCours.cloneNode(true);
+          carte.removeAttribute("data-support-cours");
+          carte.href = lien.url;
+          carte.querySelector("h3").textContent = a.titre;
+          carte.querySelector("p").textContent = a.resume;
+          carte.querySelector(".suite").textContent = lien.texte;
+          supportCours.parentNode.insertBefore(carte, supportCours);
+        });
+        supportCours.remove();
       }
-      if (apercu) apercu.textContent = cours.length ?
+      if (apercuCours) apercuCours.textContent = cours.length ?
         "Supports disponibles : " + cours.map(function (a) { return a.titre; }).join(" ; ") + "." :
         "Les prochains supports seront annoncés ici.";
-    }).catch(function () {
-      if (supports) supports.textContent = "Supports indisponibles. Rechargez la page.";
-      if (apercu) apercu.textContent = "Consultez les supports dans la rubrique Mini-cours.";
-    });
+    }).catch(function () { /* Conserver le contenu HTML en cas d'échec. */ });
   }
 
   /* ---------------------------------------------------------- journal */

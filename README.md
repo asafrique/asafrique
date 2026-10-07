@@ -71,20 +71,12 @@ ce qui exige un serveur HTTP.
 GitHub Pages, branche `main`, dossier racine. Le fichier `CNAME` fixe le domaine personnalisé.
 Toute modification poussée sur `main` est en ligne en une à deux minutes.
 
-## Mettre à jour les supports
-
-Le fichier `assets/data/journal.json` est la source unique des mini-cours :
-le catalogue du journal, la section Mini-cours et l’aperçu de la page Activités
-se mettent automatiquement à jour depuis ce fichier. Pour ajouter ou modifier
-un cours, modifier son entrée de genre `cours` (titre, auteurs, date, résumé,
-liens), puis déposer le PDF à l’emplacement indiqué dans `liens[].url`.
-Aucune modification HTML n’est nécessaire.
-
-Pour remplacer les diapositives de Cyprien Tamekue, remplacer uniquement
-`assets/slides/2026-03-08-tamekue-slides.pdf`. Les deux versions de la page
-Séminaires pointent déjà vers ce même fichier.
-
-Les fichiers `assets/seminars-*.json` et `assets/app.js` servent encore aux
-anciennes pages anglaises ; les pages françaises utilisent
-`assets/data/seminars-*.json` et `assets/js/app.js`. Cette mise à jour ne
-fusionne pas ces anciennes données de séminaires.
+## Mise à jour des supports
+Modifier les cours uniquement dans assets/data/journal.json (titre, auteurs,
+date, resume et liens). Le catalogue, les cartes Mini-cours et l'aperçu Activités
+lisent ces données. Déposer le PDF au chemin indiqué par liens[].url.
+Pour Cyprien, remplacer assets/slides/2026-03-08-tamekue-slides.pdf :
+les pages de séminaires utilisent déjà ce même fichier.
+Pour tester les données dynamiques en local : python3 -m http.server 8000,
+puis ouvrir http://localhost:8000. Le chargement JSON nécessite HTTP ;
+une ouverture directe en file:// peut bloquer les fonctions existantes.

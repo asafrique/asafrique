@@ -23,10 +23,10 @@
     "titre": "Quantification en commande",
     "auteurs": "Florent Koudohode",
     "date": "18 janvier 2026",
-    "resume": "De la dimension finie aux équations aux dérivées partielles : un cours progressif, du novice au chercheur, avec les outils de stabilité, la quantification dynamique et des exemples travaillés.",
+    "resume": "De la dimension finie aux équations aux dérivées partielles. Un cours progressif, du novice au chercheur.",
     "liens": [
       {
-        "texte": "Lire le cours complet (PDF)",
+        "texte": "Lire le PDF",
         "url": "assets/docs/quantification.pdf"
       }
     ]
